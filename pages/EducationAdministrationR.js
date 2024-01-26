@@ -42,7 +42,7 @@ export default function EducationAdministrationR() {
     <Layout EducationAdministrationR>
       <Head>
         <title>{siteTitle}</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        
       </Head>
       <div>
       <section className="grid grid-cols-1">

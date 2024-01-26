@@ -39,7 +39,7 @@ export default function ProblemSolvingU() {
     <Layout ProblemSolvingU>
       <Head>
         <title>{siteTitle}</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        
       </Head>
       <section className="grid grid-cols-1">
         <h1 className="text-lime-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... " >

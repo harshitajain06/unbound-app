@@ -16,7 +16,7 @@ export default function CorporateAdministrativeRoles() {
     <Layout CorporateAdministrativeRoles>
       <Head>
         <title>{siteTitle}</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        
       </Head>
       <div>
       <section className="grid grid-cols-1">

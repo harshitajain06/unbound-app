@@ -1,6 +1,7 @@
 import TextBox from "../components/TextBox.js";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Image from "next/image.js";
 
 export default function Questionnaire() {
   const [textBoxValues, setTextBoxValues] = useState({
@@ -187,14 +188,14 @@ export default function Questionnaire() {
               Start Questionnaire
             </button>
           </a>
-          <img
+          <Image
             className="absolute -top-20 -right-20"
             alt="Spiral picture"
             src="/images/bg-spiral.jpg"
             width={500}
             height={500}
           />
-          <img
+          <Image
             className="absolute -bottom-20 -left-20"
             alt="Cone picture"
             src="/images/bg-cone.jpg"
