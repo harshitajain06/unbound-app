@@ -189,12 +189,14 @@ export default function Questionnaire() {
           </a>
           <img
             className="absolute -top-20 -right-20"
+            alt="Spiral picture"
             src="/images/bg-spiral.jpg"
             width={500}
             height={500}
           />
           <img
             className="absolute -bottom-20 -left-20"
+            alt="Cone picture"
             src="/images/bg-cone.jpg"
             height={400}
             width={400}

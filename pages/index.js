@@ -14,7 +14,7 @@ export default function Home() {
       <p className="text-base  font-serif font-bold text-lime-200	">
         GO BEYOND DEGREES!
       </p>
-      <a href={"/newpage"}>
+      <a href={"/questionnaire"}>
         <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
           QUESTIONNAIRE
         </button>
