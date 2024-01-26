@@ -18,7 +18,7 @@ export default function OperationalManualLaborRolesU() {
         <title>{siteTitle}</title>
         
       </Head>
-      <section className="grid grid-cols-1">
+      <section className="flex flex-col items-center justify-center w-full h-full">
         <h1 className="text-lime-200 text-4xl ... font-serif ...absolute bottom-0 right-3 w-30 ...">
           Resources & Reccomendations
         </h1>
@@ -35,14 +35,7 @@ export default function OperationalManualLaborRolesU() {
         </Box>
       text-cyan-200
       </section>
-      <div>
-      <a href={"/"}>
-          <button className="text-green-200 fixed top-3 left-6 z-50 p-4 text-2xl font-MONO transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... ">        
-
-            Home
-          </button>
-        </a>
-        </div>
+      
 
     </Layout>
   );

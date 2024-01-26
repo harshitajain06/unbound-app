@@ -2,6 +2,7 @@ import TextBox from "../components/TextBox.js";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Image from "next/image.js";
+import Layout from "@/components/Layout.js";
 
 export default function Questionnaire() {
   const [textBoxValues, setTextBoxValues] = useState({
@@ -80,7 +81,7 @@ export default function Questionnaire() {
   // };
 
   return (
-    <div className="flex min-h-screen items-center justify-between p-24 bg-black">
+    <Layout>
       <section className="flex flex-col items-center justify-center w-full h-full">
         <h1 className="text-lime-200 text-4xl mb-10">
           Identity
@@ -188,20 +189,7 @@ export default function Questionnaire() {
               Start Questionnaire
             </button>
           </a>
-          <Image
-            className="absolute -top-20 -right-20"
-            alt="Spiral picture"
-            src="/images/bg-spiral.jpg"
-            width={500}
-            height={500}
-          />
-          <Image
-            className="absolute -bottom-20 -left-20"
-            alt="Cone picture"
-            src="/images/bg-cone.jpg"
-            height={400}
-            width={400}
-          />
+          
           <a href={"/"}>
             <button className="text-green-200 fixed top-3 left-6 z-50 p-4 text-2xl font-MONO transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... ">
               Home
@@ -209,6 +197,6 @@ export default function Questionnaire() {
           </a>
 
       </section>
-    </div>
+    </Layout>
   );
 }
