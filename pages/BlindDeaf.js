@@ -48,14 +48,14 @@ export default function BlindDeaf() {
         
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-lime-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... ">
+        <h1 className="text-lime-200 text-5xl text-center  tracking-wide ..  pb-8 ...pb-8 ...pb-8 ...pb-8 ...pb-8 ...">
           Question 3
         </h1>
         {/* <p className="text-lime-200">
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
-        <h1 class="text-cyan-200 font-serif text-2xl absolute left-60  transform -translate-x-1/4 relative h-20 absolute inset-20 ... ">
+        <h1 class="text-cyan-200 font-serif text-2xl  text-center  tracking-wide ..  ">
           Which skill do you have best?
         </h1>
         <Dropdown options={BlindDeafOptions} onChange={handleDropdownChange} />

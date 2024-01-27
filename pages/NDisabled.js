@@ -39,16 +39,18 @@ export default function NDisabled() {
         
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-lime-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... ">
+        <h1 className="text-lime-200 text-5xl ... font-serif text-center  tracking-wide ..   ">
           Question 2
         </h1>
         {/* <p className="text-lime-200">
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
-        <h1 class="text-cyan-200 font-serif text-2xl absolute left-60  transform -translate-x-1/4 relative h-20 absolute inset-20 ... ">
+        <h1 class="text-cyan-200 font-serif text-2xl text-center  tracking-wide ..  ">
           Where do you live?
         </h1>
+
+
         <Dropdown options={NDisabledOptions} onChange={handleDropdownChange} />
         <button
           className="text-lime-200 text-3xl ... inset-x-0 font-serif bottom-10 h-16 ... transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."

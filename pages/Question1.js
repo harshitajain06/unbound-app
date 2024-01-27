@@ -46,14 +46,14 @@ export default function Question1() {
         <title>{siteTitle}</title>
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-lime-200 text-5xl ... font-serif  ...absolute bottom-3 right-5 w-auto ...">
+        <h1 className="text-lime-200 text-5xl ... font-serif  text-center  tracking-wide .. pb-8 ...">
           Question 1
         </h1>
         {/* <p className="text-yellow-200">
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
-        <h1 class="text-cyan-200 font-serif text-2xl text-center  transform -translate-x-1/4 relative h-20 absolute inset-20 ... ">
+        <h1 class="text-cyan-200 font-serif text-2xl text-center  tracking-wide ..   ">
           Do you have any mobility challenges?
         </h1>
         <Dropdown options={Question1Options} onChange={handleDropdownChange} />

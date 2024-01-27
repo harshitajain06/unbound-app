@@ -52,7 +52,7 @@ export default function Ruralarea() {
         
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-lime-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... ">
+        <h1 className="text-lime-200 text-5xl text-center  tracking-wide .. ">
           Question 3
         </h1>
         {/* <p className="text-lime-200">

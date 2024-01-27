@@ -46,14 +46,12 @@ export default function TechnicalR() {
         
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-lime-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... ">
+        <h1 className="text-lime-200 text-5xl text-center  tracking-wide ..  pb-8 ...pb-8 ...pb-8 ...pb-8 ...">
           Question 4
         </h1>
-        {/* <p className="text-lime-200">
-          Rules: * questions are mandantory and the rest are optional
-        </p> */}
+       
 
-        <h1 class="text-cyan-200 font-serif text-2xl absolute left-60  transform -translate-x-1/4 relative h-20 absolute inset-20 ... ">
+        <h1 class="text-cyan-200 font-serif text-2xl text-centre tracking wide .. ">
           Which from these do you prefer?
         </h1>
         <Dropdown options={TechnicalROptions} onChange={handleDropdownChange} />
@@ -64,17 +62,6 @@ export default function TechnicalR() {
           NEXT
         </button>
 
-        {/* <p>Selected option: {dropdownValue}</p> */}
-
-        {/* <TextBox type="text" value0={textBoxValue} onChange={handleTextBoxChange} /> */}
-
-        {/* <div>
-          <a href={"/third"}>
-            <button className="text-lime-20000 absolute inset-x-0 bottom--30 h-16 ... text-3xl ..." >
-              Submit
-            </button>
-          </a>{" "}
-        </div> */}
       </section>
       
     </Layout>
