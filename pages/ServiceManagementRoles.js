@@ -22,7 +22,7 @@ export default function ServiceManagementRoles() {
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
         <h1 className="text-cyan-200 text-3xl ... font-serif ...absolute bottom-0 right-3 w-30 ...">
-          RECCOMENDATIONS
+          RECOMMENDATIONS
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
