@@ -21,8 +21,8 @@ export default function TechnicalSkilledRoles() {
         
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-lime-2000 right-3 w-30 ...">
-          Resources & Reccomendations
+        <h1 className="text-cyan-2000 right-3 w-30 ...">
+          RECCOMENDATIONS
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
