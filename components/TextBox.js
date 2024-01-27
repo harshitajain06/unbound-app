@@ -26,18 +26,16 @@ const TextBox = ({type, value, onChange }) => {
   const textBoxStyle = {
     padding: '8px',
     fontSize: '15px',
-    border: `2px solid ${isHovered || isFocused ? '#d9f99d' : '#27272a'}`,
+    border: `3px solid ${isHovered || isFocused ? '#10b981' : '#27272a'}`,
     borderRadius: '20px',
-    color: '#86efac',
+    color: '#fef08a',
+    backgroundColor: '#171717',
     outline: 'none',
     transition: 'border-color 0.3s ease', // Smooth transition for border color
+    width: '500px',
+    
 
-    // ':hover': {
-    //   borderColor: '#ef4444', // Border color on hover
-    // },
-    // ':focus': {
-    //   borderColor: '#ef4444', // Border color on focus
-    // },
+  
   };
   return (
     <input
@@ -55,15 +53,3 @@ const TextBox = ({type, value, onChange }) => {
 };
 
 export default TextBox;
-
-// padding: 7px;
-//   font-size: 15px;
-//   border: 2px solid #27272a; /* Green border color */
-//   border-radius: 20px;
-//   color: #4ade80;
-//   outline: none;
-//   transition: border-color 0.3s ease;
-
-//   &:hover,
-//   &:focus {
-//     border-color: #ef4444; /* Darker green border color on hover/focus */

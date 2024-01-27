@@ -83,54 +83,66 @@ export default function Questionnaire() {
   return (
     <Layout>
       <section className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-lime-200 text-4xl mb-10">
-          Identity
-        </h1>
-        {/* <p className="text-lime-200">
-          Rules: * questions are mandantory and the rest are optional
-        </p> */}
+      <h1 className="text-4xl md:text-5xl font-serif	 mb-4 text-lime-200 line-clamp-3">
+        Identity
+      </h1>
+      {/* Add some spacing */}
+      <div className="mb-4"></div>
 
-        <h1 className="text-xl ... text-white  ">First Name</h1>
+      {/* Add spacing between each section */}
+      <div className="mb-4">
+        <h1 className="text-xl ... text-white">First Name</h1>
         <TextBox
           type="text"
           value={textBoxValues.Fname}
           onChange={(e) => handleTextBoxChange(e, "Fname")}
         />
+      </div>
 
-        <h1 className="text-xl ... text-white ">Email</h1>
+      <div className="mb-4">
+        <h1 className="text-xl ... text-white">Email</h1>
         <TextBox
           type="text"
           value={textBoxValues.Email}
           onChange={(e) => handleTextBoxChange(e, "Email")}
         />
+      </div>
 
-        <h1 className="text-xl ... text-white ">Age</h1>
+      <div className="mb-4">
+        <h1 className="text-xl ... text-white">Age</h1>
         <TextBox
           type="number"
           value={textBoxValues.Age}
           onChange={(e) => handleTextBoxChange(e, "Age")}
         />
+      </div>
 
-        <h1 className="text-xl ... text-white  ">Location</h1>
+      <div className="mb-4">
+        <h1 className="text-xl ... text-white">Location</h1>
         <TextBox
           type="text"
           value={textBoxValues.Location}
           onChange={(e) => handleTextBoxChange(e, "Location")}
         />
+      </div>
 
-        <h1 className="text-xl ... text-white  ">Phone Number</h1>
+      <div className="mb-4">
+        <h1 className="text-xl ... text-white">Phone Number</h1>
         <TextBox
           type="number"
           value={textBoxValues.Phone}
           onChange={(e) => handleTextBoxChange(e, "Phone")}
         />
+      </div>
 
-        <h1 className="text-xl ... text-white  ">Highest level of education</h1>
+      <div className="mb-4">
+        <h1 className="text-xl ... text-white">Highest level of education</h1>
         <TextBox
           type="text"
           value={textBoxValues.HLE}
           onChange={(e) => handleTextBoxChange(e, "HLE")}
         />
+      </div>
 
 
           <a href={"/Question1"}>
@@ -186,7 +198,7 @@ export default function Questionnaire() {
                 }
               }}
             >
-              Start Questionnaire
+              START QUESTIONNAIRE
             </button>
           </a>
           

@@ -1,3 +1,7 @@
+
+import Image from "next/image";
+
+
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-between p-24 bg-black">
@@ -19,6 +23,21 @@ export default function Home() {
           QUESTIONNAIRE
         </button>
       </a>
+
+      <Image
+        className="absolute -top-20 -right-20"
+        alt="Spiral picture"
+        src="/images/bg-spiral.jpg"
+        width={500}
+        height={500}
+      />
+      <Image
+        className="absolute -bottom-20 -left-20"
+        alt="Cone picture"
+        src="/images/bg-cone.jpg"
+        height={400}
+        width={400}
+      />
     </div>
   </main>
   );
