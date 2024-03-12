@@ -24,30 +24,54 @@ export default function EducationAdministrationL() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-        <Box>
-          <p>Corporate Jobs</p>
-        </Box>
-        <Box>
-          <p>Working in NGOs</p>
-        </Box>
-        <Box>
-          <p>Office Assistant</p>
-        </Box>
-        <Box>
-          <p>Community Outreach Coordinator</p>
-        </Box>
-        <Box>
-          <p>Front Desk Receptionist:</p>
-        </Box>
-        <Box>
-          <p>Teacher</p>
-        </Box>
-        <Box>
-          <p>Library Assistant</p>
-        </Box>
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+
+          <p className = "text-lime-200">Corporate Jobs</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+
+          <p className = "text-lime-200">Working in NGOs</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Office Assistant</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Community Outreach Coordinator</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+
+          <p className = "text-lime-200">Front Desk Receptionist:</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Teacher</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+
+          <p className = "text-lime-200">Library Assistant</p>
+        </button>
+  
       </section>
       
     </Layout>
   );
 }
-// }

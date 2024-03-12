@@ -28,5 +28,21 @@
     outline: none; /* Remove default focus outline */
   }
   
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will make the container take up the full height of the viewport */
+  }
+  
+  .dropdownButton {
+    /* Add your dropdown button styles here */
+    /* For example: */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
   /* Add more styles as needed */
   

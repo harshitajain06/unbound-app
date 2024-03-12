@@ -26,18 +26,30 @@ export default function ServiceManagementRolesU() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-        <Box>
-          <p>Cashier</p>
-        </Box>
-        <Box>
-          <p>Construction laborers</p>
-        </Box>
-        <Box>
-          <p>Security systems</p>
-        </Box>
-        <Box>
-          <p>Shop management</p>
-        </Box>
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Cashier</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Construction laborers</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Security systems</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Shop management</p>
+        </button>
+  
       </section>
       
     </Layout>

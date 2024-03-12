@@ -26,30 +26,46 @@ export default function ServiceL() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-        <Box>
-          <p>Nurses/Wardboy</p>
-        </Box>
-        <Box>
-          <p>Masseuse</p>
-        </Box>
-        <Box>
-          <p>Fast food service position</p>
-        </Box>
-        <Box>
-          <p>Baby sitter</p>
-        </Box>
-        <Box>
-          <p>Pet care taker</p>
-        </Box>
-        <Box>
-          <p>Painter</p>
-        </Box>
-        <Box>
-          <p>Cook</p>
-        </Box>
-        <Box>
-          <p>Beauticians</p>
-        </Box>
+         
+        <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+          <p>Nurse/Wardboy</p>
+        </button>
+  
+         
+         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+          <p  >Masseuse</p>
+        </button>
+  
+         
+         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+          <p  >Fast food service position</p>
+        </button>
+  
+         
+         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+          <p  >Baby sitter</p>
+        </button>
+  
+         
+         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+          <p  >Pet care taker</p>
+        </button>
+  
+         
+         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+          <p  >Painter</p>
+        </button>
+  
+         
+         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+          <p  >Cook</p>
+        </button>
+  
+         
+         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+          <p  >Beautician</p>
+        </button>
+  
       </section>
       
     </Layout>

@@ -26,18 +26,30 @@ export default function OperationsLaborRolesU() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-        <Box>
-          <p>Packaging assistants</p>
-        </Box>
-        <Box>
-          <p>Kitchen assistants</p>
-        </Box>
-        <Box>
-          <p>Warehouse workers</p>
-        </Box>
-        <Box>
-          <p>Construction Laborer</p>
-        </Box>
+         
+                       <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+
+          <p className = "text-lime-200">Packaging assistants</p>
+          </button>
+          
+         
+                     <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+
+          <p className = "text-lime-200">Kitchen assistants</p>
+          </button>
+          
+         
+                     <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+
+          <p className = "text-lime-200">Warehouse workers</p>
+          </button>
+          
+         
+                     <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+
+          <p className = "text-lime-200">Construction Laborer</p>
+          </button>
+          
       </section>
       
     </Layout>

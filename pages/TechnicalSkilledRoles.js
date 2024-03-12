@@ -26,15 +26,24 @@ export default function TechnicalSkilledRoles() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-        <Box>
-          <p>Driving</p>
-        </Box>
-        <Box>
-          <p>Cooks</p>
-        </Box>
-        <Box>
-          <p>Painter</p>
-        </Box>
+         
+                       <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+
+          <p className = "text-lime-200">Driving</p>
+          </button>
+          
+         
+                     <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+
+          <p className = "text-lime-200">Cooks</p>
+          </button>
+          
+         
+                     <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+
+          <p className = "text-lime-200">Painter</p>
+          </button>
+          
       </section>
       
     </Layout>

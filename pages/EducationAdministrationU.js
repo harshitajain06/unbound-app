@@ -53,7 +53,7 @@ export default function EducationAdministrationU() {
         <Dropdown options={EducationAdministrationUOptions} onChange={handleDropdownChange} />
         <button className="text-lime-200 text-3xl ... inset-x-0 bottom-10 h-16 ... transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." onClick={handleSubmit}>NEXT</button>
 
-        {/* <p>Selected option: {dropdownValue}</p> */}
+        {/* <p className = "text-lime-200">Selected option: {dropdownValue}</p> */}
 
         {/* <TextBox type="text" value0={textBoxValue} onChange={handleTextBoxChange} /> */}
 

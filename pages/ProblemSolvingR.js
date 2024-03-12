@@ -67,7 +67,7 @@ export default function ProblemSolvingR() {
           NEXT
         </button>
 
-        {/* <p>Selected option: {dropdownValue}</p> */}
+        {/* <p className = "text-lime-200">Selected option: {dropdownValue}</p> */}
 
         {/* <TextBox type="text" value0={textBoxValue} onChange={handleTextBoxChange} /> */}
 

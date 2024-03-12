@@ -26,21 +26,37 @@ export default function TechnicalSkilledRolesU() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-        <Box>
-          <p>Driving</p>
-        </Box>
-        <Box>
-          <p>Beauticians</p>
-        </Box>
-        <Box>
-          <p>Cooks</p>
-        </Box>
-        <Box>
-          <p>Painter</p>
-        </Box>
-        <Box>
-          <p>Massagers</p>
-        </Box>
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Driving</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Beauticians</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Cooks</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+
+          <p className = "text-lime-200">Painter</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Massagers</p>
+        </button>
+  
       </section>
       
     </Layout>

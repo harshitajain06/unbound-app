@@ -26,18 +26,30 @@ export default function ProblemSolvingH() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-        <Box>
-          <p>Delivery Driver</p>
-        </Box>
-        <Box>
-          <p>Customer Service Representative</p>
-        </Box>
-        <Box>
-          <p>Janitorial Services Assistant</p>
-        </Box>
-        <Box>
-          <p>Warehouse manager</p>
-        </Box>
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Delivery Driver</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Customer Service Representative</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Janitorial Services Assistant</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Warehouse manager</p>
+        </button>
+  
       </section>
       
     </Layout>

@@ -64,18 +64,6 @@ export default function Question1() {
           NEXT
         </button>
 
-        {/* <p>Selected option: {dropdownValue}</p> */}
-
-        {/* <TextBox type="text" value0={textBoxValue} onChange={handleTextBoxChange} /> */}
-
-        {/* <div>
-          <a href={"/third"}>
-            <button className="text-yellow-200 absolute inset-x-0 bottom--30 h-16 ... text-4xl ..." >
-              Submit
-            </button>
-          </a>{" "}
-        </div> */}
-
      </section>
     </Layout>
   );

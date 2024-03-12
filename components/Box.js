@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '../styles/Box.module.css';
 
 const Box = ({ children }) => {
-  return <div className={styles.box}>{children}</div>;
+  return <div className={styles.Box}>{children}</div>;
 };
 
 export default Box;

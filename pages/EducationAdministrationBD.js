@@ -28,18 +28,26 @@ export default function EducationAdministrationBD() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-        <Box>
-          <p>Event Manual Labour</p>
-        </Box>
-        <Box>
-          <p>Microfinance Officer</p>
-        </Box>
-        <Box>
-          <p>Construction Laborer</p>
-        </Box>
-        <Box>
-          <p>Data Entry Clerk</p>
-        </Box>
+         
+          <buton>
+          <p className = "text-lime-200">Event Manual Labour</p>
+          </buton>
+          
+         
+        <buton>
+          <p className = "text-lime-200">Microfinance Officer</p>
+          </buton>
+          
+         
+        <buton>
+          <p className = "text-lime-200">Construction Laborer</p>
+          </buton>
+          
+         
+        <buton>
+          <p className = "text-lime-200">Data Entry Clerk</p>
+          </buton>
+          
         </section>
         
         </Layout>

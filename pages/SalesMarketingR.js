@@ -26,12 +26,18 @@ export default function SalesMarketingR() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-        <Box>
-          <p>Event manual labor</p>
-        </Box>
-        <Box>
-          <p>Delivery Driver</p>
-        </Box>
+         
+                       <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+
+          <p className = "text-lime-200">Event manual labor</p>
+          </button>
+          
+         
+                     <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+
+          <p className = "text-lime-200">Delivery Driver</p>
+          </button>
+          
       </section>
       
     </Layout>

@@ -26,12 +26,18 @@ export default function SocialEducationalRoles() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-        <Box>
-          <p>teacher</p>
-        </Box>
-        <Box>
-          <p>Working in NGOs</p>
-        </Box>
+         
+                       <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+
+          <p className = "text-lime-200">teacher</p>
+          </button>
+          
+         
+                     <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+
+          <p className = "text-lime-200">Working in NGOs</p>
+          </button>
+          
       </section>
       
     </Layout>

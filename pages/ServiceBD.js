@@ -5,7 +5,6 @@ import Layout, { siteTitle } from "../components/Layout";
 
 
 import React, { useState } from "react";
-import Box from "../components/Box";
 
 export default function ServiceBD() {
   const [textBoxValue, setTextBoxValue] = useState("");
@@ -26,27 +25,48 @@ export default function ServiceBD() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-        <Box>
-          <p>Nurses/Wardboy</p>
-        </Box>
-        <Box>
-          <p>Masseuse</p>
-        </Box>
-        <Box>
-          <p>Fast food service position</p>
-        </Box>
-        <Box>
-          <p>Baby sitter</p>
-        </Box>
-        <Box>
-          <p>Pet care taker</p>
-        </Box>
-        <Box>
-          <p>Painter</p>
-        </Box>
-        <Box>
-          <p>Cook</p>
-        </Box>
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Nurses/Wardboy</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Masseuse</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Fast food service position</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Baby sitter</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Pet care taker</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Painter</p>
+        </button>
+  
+         
+          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+
+          <p className = "text-lime-200">Cook</p>
+        </button>
+  
       </section>
       
     </Layout>
