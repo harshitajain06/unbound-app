@@ -16,7 +16,6 @@ export default function OperationalManualLaborRolesU() {
     <Layout OperationalManualLaborRolesU>
       <Head>
         <title>{siteTitle}</title>
-        
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
         <h1 className="text-cyan-200 text-4xl ... font-serif ...absolute bottom-0 right-3 w-30 ...">
@@ -24,29 +23,25 @@ export default function OperationalManualLaborRolesU() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-         
-                     <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
 
-          <p className = "text-lime-200">Event manual labor</p>
+        <a href={"/Event_Manual_Labour"}>
+          <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+            <p className="text-lime-200">Event manual labor</p>
           </button>
-          
-         
-                     <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
+        </a>
 
-          <p className = "text-lime-200">Construction Laborer</p>
+        <a href={"/Construction_Labourer"}>
+          <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+            <p className="text-lime-200">Construction Laborer</p>
           </button>
-          
-         
-                       <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
-
-          <p className = "text-lime-200">Delivery Driver</p>
+        </a>
+        <a href={"/Delivery_Driver"}>
+          <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+            <p className="text-lime-200">Delivery Driver</p>
           </button>
-          
-      text-cyan-200
+        </a>
       </section>
-      
-
     </Layout>
   );
 }
-// 
+//

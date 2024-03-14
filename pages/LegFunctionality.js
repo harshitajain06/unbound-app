@@ -1,22 +1,25 @@
-// // pages/Question1.js
-
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Dropdown from "../components/Dropdown";
 
 export default function LegFunctionality() {
-  // const [textBoxValue, setTextBoxValue] = useState("");
-  const [dropdownValue, setDropdownValue] = useState(""); // State for dropdown value
+  const [selectedOption, setSelectedOption] = useState(""); // State for selected option
   const router = useRouter();
 
-  // const handleTextBoxChange = (e) => {
-  //   setTextBoxValue(e.target.value);
-  // };
-
-  const handleDropdownChange = (selectedOption) => {
-    setDropdownValue(selectedOption);
+  const handleButtonClick = (value) => {
+    setSelectedOption(value);
+    if (value === "Technical") {
+      router.push("/TechnicalL");
+    } else if (value === "Service") {
+      router.push("/ServiceL");
+    } else if (value === "Problem Solving") {
+      router.push("/ProblemSolvingL");
+    } else if (value === "Sales and Marketing") {
+      router.push("/SalesMarketingL");
+    } else if (value === "Education and Administration") {
+      router.push("/EducationAdministrationL");
+    }
   };
 
   const LegFunctionalityOptions = [
@@ -30,61 +33,34 @@ export default function LegFunctionality() {
     },
   ];
 
-  const handleSubmit = () => {
-    if (dropdownValue === "Technical") {
-      router.push("/TechnicalL");
-    } else if (dropdownValue === "Service") {
-      router.push("/ServiceL");
-    } else if (dropdownValue === "Problem Solving") {
-      router.push("/ProblemSolvingL");
-    } else if (dropdownValue === "Sales and Marketing") {
-      router.push("/SalesMarketingL");
-    } else if (dropdownValue === "Education and Administration") {
-      router.push("/EducationAdministrationL");
-    }
-  };
-
   return (
     <Layout LegFunctionality>
       <Head>
         <title>{siteTitle}</title>
-        
-      </Head><section className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-lime-200 text-5xl text-center  tracking-wide ..  pb-8 ...pb-8 ...pb-8 ...pb-8 ...pb-8 ...pb-8 ...pb-8 ...pb-8 ...">
+      </Head>
+      <section className="flex flex-col items-center justify-center w-full h-full">
+        <h1 className="text-lime-200 text-5xl text-center tracking-wide pb-8">
           Question 3
         </h1>
-        {/* <p className="text-lime-200">
-          Rules: * questions are mandantory and the rest are optional
-        </p> */}
 
-        <h1 class="text-cyan-200 font-serif text-2xl text-center  tracking-wide ..  ">
+        <h1 className="text-cyan-200 font-serif text-2xl text-center tracking-wide">
           Which skill do you have best?
         </h1>
-        <Dropdown
-          options={LegFunctionalityOptions}
-          onChange={handleDropdownChange}
-        />
-        <button
-          className="text-lime-200 text-3xl ... inset-x-0 font-serif bottom-10 h-16 ...transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
-          onClick={handleSubmit}
-        >
-          NEXT
-        </button>
 
-        {/* <p className = "text-lime-200">Selected option: {dropdownValue}</p> */}
-
-        {/* <TextBox type="text" value0={textBoxValue} onChange={handleTextBoxChange} /> */}
-
-        {/* <div>
-          <a href={"/third"}>
-            <button className="text-lime-200 absolute inset-x-0 bottom--30 h-16 ... text-4xl ..." >
-              Submit
+        <div className="grid grid-cols-2 gap-4 mt-4">
+          {LegFunctionalityOptions.map((option) => (
+            <button
+              key={option.value}
+              className={`border-4 px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
+                selectedOption === option.value ? "bg-zinc-800 text-white" : ""
+              }`}
+              onClick={() => handleButtonClick(option.value)}
+            >
+              {option.label}
             </button>
-          </a>{" "}
-        </div> */}
-      
+          ))}
+        </div>
       </section>
-      
     </Layout>
   );
 }

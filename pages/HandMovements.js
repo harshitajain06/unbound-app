@@ -1,21 +1,25 @@
-// // pages/Question1.js
-
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Dropdown from "../components/Dropdown";
 
 export default function Handmovements() {
-  const [dropdownValue, setDropdownValue] = useState(""); // State for dropdown value
+  const [selectedOption, setSelectedOption] = useState(""); // State for selected option
   const router = useRouter();
 
-  // const handleTextBoxChange = (e) => {
-  //   setTextBoxValue(e.target.value);
-  // };
-
-  const handleDropdownChange = (selectedOption) => {
-    setDropdownValue(selectedOption);
+  const handleButtonClick = (value) => {
+    setSelectedOption(value);
+    if (value === "Technical") {
+      router.push("/TechnicalH");
+    } else if (value === "Service") {
+      router.push("/ServiceH");
+    } else if (value === "Problem Solving") {
+      router.push("/ProblemSolvingH");
+    } else if (value === "Sales and Marketing") {
+      router.push("/SalesMarketingH");
+    } else if (value === "Education and Administration") {
+      router.push("/EducationAdministrationH");
+    }
   };
 
   const handmovementsOptions = [
@@ -23,61 +27,37 @@ export default function Handmovements() {
     { label: "Service", value: "Service" },
     { label: "Problem Solving", value: "Problem Solving" },
     { label: "Sales and Marketing", value: "Sales and Marketing" },
-    { label: "Education and Administration", value: "Education and Administration",},
+    { label: "Education and Administration", value: "Education and Administration" },
   ];
-
-  const handleSubmit = () => {
-    if (dropdownValue === "Technical") {
-      router.push("/TechnicalH");
-    } else if (dropdownValue === "Service") {
-      router.push("/ServiceH");
-    } else if (dropdownValue === "Problem Solving") {
-      router.push("/ProblemSolvingH");
-    } else if (dropdownValue === "Sales and Marketing") {
-      router.push("/SalesMarketingH");
-    } else if (dropdownValue === "Education and Administration") {
-      router.push("/EducationAdministrationH");
-    }
-  };
 
   return (
     <Layout handmovements>
       <Head>
         <title>{siteTitle}</title>
-        
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-lime-200 text-5xl text-center  tracking-wide .. ">
+        <h1 className="text-lime-200 text-5xl text-center tracking-wide">
           Question 3
         </h1>
-        {/* <p className="text-lime-200">
-          Rules: * questions are mandantory and the rest are optional
-        </p> */}
 
-        <h1 class="text-cyan-200 font-serif text-2xl text-center  tracking-wide ..">
+        <h1 className="text-cyan-200 font-serif text-2xl text-center tracking-wide">
           Which skill do you have best?
         </h1>
-        <Dropdown options={handmovementsOptions} onChange={handleDropdownChange} />
-        <button
-          className="text-lime-200 text-3xl ... inset-x-0 font-serif bottom-10 h-16 ... transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
-          onClick={handleSubmit}
-        >
-          NEXT
-        </button>
 
-        {/* <p className = "text-lime-200">Selected option: {dropdownValue}</p> */}
-
-        {/* <TextBox type="text" value0={textBoxValue} onChange={handleTextBoxChange} /> */}
-
-        {/* <div>
-          <a href={"/third"}>
-            <button className="text-lime-200 absolute inset-x-0 bottom--30 h-16 ... text-4xl ..." >
-              Submit
+        <div className="grid grid-cols-2 gap-4 mt-4">
+          {handmovementsOptions.map((option) => (
+            <button
+              key={option.value}
+              className={`border-4 px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
+                selectedOption === option.value ? "bg-zinc-800 text-white" : ""
+              }`}
+              onClick={() => handleButtonClick(option.value)}
+            >
+              {option.label}
             </button>
-          </a>{" "}
-        </div> */}
+          ))}
+        </div>
       </section>
-      
     </Layout>
   );
 }

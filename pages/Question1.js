@@ -1,44 +1,26 @@
-// // pages/Question1.js
 
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Dropdown from "../components/Dropdown";
-import Layout, { siteTitle } from "../components/Layout"
-
+import Layout, { siteTitle } from "../components/Layout";
 
 export default function Question1() {
-  // const [textBoxValue, setTextBoxValue] = useState("");
-  const [dropdownValue, setDropdownValue] = useState(""); // State for dropdown value
+  const [selectedOption, setSelectedOption] = useState(""); // State for selected option
   const router = useRouter();
 
-  // const handleTextBoxChange = (e) => {
-  //   setTextBoxValue(e.target.value);
-  // };
-
-  const handleDropdownChange = (selectedOption) => {
-    setDropdownValue(selectedOption);
+  const handleButtonClick = (value) => {
+    setSelectedOption(value);
+    if (value === "Disabled") {
+      router.push("/Disabled");
+    } else if (value === "Not Disabled") {
+      router.push("/NDisabled");
+    }
   };
 
   const Question1Options = [
     { label: "Yes", value: "Disabled" },
     { label: "No", value: "Not Disabled" },
-    // { label: "Neck mobility", value: "Neck mobility" },
-    // { label: "Hip flexibility", value: "Hip flexibility" },
   ];
-
-  const handleSubmit = () => {
-    if (dropdownValue === "Disabled") {
-      router.push("/Disabled");
-    } else if (dropdownValue === "Not Disabled") {
-      router.push("/NDisabled");
-    }
-    // }  else if (dropdownValue === "Neck mobility") {
-    //   router.push("/page-for-option-Neck mobility");
-    // } else if (dropdownValue === "Hip flexibility") {
-    //   router.push("/page-for-option-Hip flexibility");
-    // }
-  };
 
   return (
     <Layout Question1>
@@ -49,24 +31,25 @@ export default function Question1() {
         <h1 className="text-lime-200 text-5xl ... font-serif  text-center  tracking-wide .. pb-8 ...">
           Question 1
         </h1>
-        {/* <p className="text-yellow-200">
-          Rules: * questions are mandantory and the rest are optional
-        </p> */}
 
-        <h1 class="text-cyan-200 font-serif text-2xl text-center  tracking-wide ..   ">
+        <h1 className="text-cyan-200 font-serif text-2xl text-center tracking-wide ..">
           Do you have any mobility challenges?
         </h1>
-        <Dropdown options={Question1Options} onChange={handleDropdownChange} />
-        <button
-          className="text-lime-200 text-3xl ... inset-x-0 bottom-10 h-16 ... transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
-          onClick={handleSubmit}
-        >
-          NEXT
-        </button>
 
-     </section>
+        <div className="flex space-x-4 mt-4">
+          {Question1Options.map((option) => (
+            <button
+              key={option.value}
+              className={` border-4  px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
+                selectedOption === option.value ? "bg-zinc-800 text-white" : ""
+              }`}
+              onClick={() => handleButtonClick(option.value)}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+      </section>
     </Layout>
   );
 }
-
-//  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...

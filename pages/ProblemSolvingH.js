@@ -3,7 +3,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 
-
 import React, { useState } from "react";
 import Box from "../components/Box";
 
@@ -18,7 +17,6 @@ export default function ProblemSolvingH() {
     <Layout ProblemSolvingH>
       <Head>
         <title>{siteTitle}</title>
-        
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
         <h1 className="text-cyan-200 text-4xl ... font-serif ...absolute bottom-0 right-3 w-30 ...">
@@ -26,32 +24,32 @@ export default function ProblemSolvingH() {
         </h1>
         {/* 6 */}
         <p className="text-cyan-200"></p>
-         
-          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
 
-          <p className = "text-lime-200">Delivery Driver</p>
+        <a href={"/Delivery_Driver"}>
+        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+          <p className="text-lime-200">Delivery Driver</p>
         </button>
-  
-         
-          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        </a>
 
-          <p className = "text-lime-200">Customer Service Representative</p>
+        <a href={"/Customer_S_R"}>
+        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+          <p className="text-lime-200">Customer Service Representative</p>
         </button>
-  
-         
-          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        </a>
 
-          <p className = "text-lime-200">Janitorial Services Assistant</p>
+        <a href={"/Janitorial_S_A"}>
+        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+          <p className="text-lime-200">Janitorial Services Assistant</p>
         </button>
-  
-         
-          <button className="text-cyan-200 text-3xl font-MONO h-16  mt-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        </a>
 
-          <p className = "text-lime-200">Warehouse manager</p>
+        <a href={"/Warehouse_Worker"}>
+        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+          <p className="text-lime-200">Warehouse manager</p>
         </button>
-  
+        </a>
+
       </section>
-      
     </Layout>
   );
 }

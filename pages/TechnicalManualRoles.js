@@ -25,22 +25,30 @@ export default function TechnicalManualRoles() {
         {/* 6 */}
         <p className="text-cyan-200"></p>
 
-
+        <a href={"/Car_R_Tech"}>
         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
-          <p className="text-lime-200"> Car repairing </p>
+          <p className="text-lime-200"> Car repairing Technician</p>
         </button>
+        </a>
 
+        <a href={"/Manufacturing_Operator"}>
         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
           <p className="text-lime-200">Manufacturing</p>
         </button>
+        </a>
 
+        <a href={"/Plumber"}>
         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
           <p className="text-lime-200">Plumbing</p>
         </button>
+        </a>
 
+        <a href={"/Electrician"}>
         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
           <p className="text-lime-200">Electric works</p>
         </button>
+        </a>
+
       </section>
     </Layout>
   );

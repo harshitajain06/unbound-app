@@ -29,12 +29,10 @@ const TextBox = ({type, value, onChange }) => {
     border: `3px solid ${isHovered || isFocused ? '#10b981' : '#27272a'}`,
     borderRadius: '20px',
     color: '#fef08a',
-    backgroundColor: '#171717',
+    backgroundColor: '#1c1917', // Replace with your desired neutral 950 color
     outline: 'none',
     transition: 'border-color 0.3s ease', // Smooth transition for border color
     width: '500px',
-    
-
   
   };
   return (
