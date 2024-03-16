@@ -7,10 +7,13 @@ import Script from 'next/script'
 
 export default function Home() {
   return (
+    
     <main className="flex min-h-screen items-center justify-center bg-neutral-900 relative">
       {/* Adding the GIF image without transparency */}
       <div className="absolute top-0 left-0 w-full h-full">
-        <Image src="/bgpic.gif" layout="fill" objectFit="cover" />
+        <Image src="/bgpic.gif" 
+        layout="fill" 
+        objectFit="cover" />
       </div>
       {/* Text content */}
       <div className="text-center text-white relative z-10">

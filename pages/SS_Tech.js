@@ -3,17 +3,16 @@ import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
-
 export default function ss_tech() {
-
   const handleGoBack = () => {
     router.back();
   };
-  
-  return (
+
+    return (
     <Layout>
       <Head>
-         
+      <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -53,28 +52,83 @@ export default function ss_tech() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Electronic security systems <br />
-                * Wiring and connectivity <br />
-                * Troubleshooting skills <br />{" "}
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=qDuXFxWEjb4&pp=ygUpVW5kZXJzdGFuZGluZyBFbGVjdHJvbmljIFNlY3VyaXR5IFN5c3RlbXM%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Electronic security systems
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=AQ1EPl_4O2w&pp=ygUrV2lyaW5nIGFuZCBDb25uZWN0aXZpdHkgaW4gU2VjdXJpdHkgU3lzdGVtcw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Wiring and connectivity
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=SK8D1bdJh7s&pp=ygU2cm91Ymxlc2hvb3RpbmcgU2tpbGxzIGZvciBTZWN1cml0eSBTeXN0ZW1zIFRlY2huaWNpYW5z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Troubleshooting skills{" "}
+                </a>{" "}
+                <br />
               </p>
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-  * <a href="https://www.naukri.com/security-system-integration-jobs" target="_blank" rel="noopener noreferrer">Security system integration firms</a> <br />
-  * <a href="https://www.naukri.com/surveillance-alarm-jobs" target="_blank" rel="noopener noreferrer">Surveillance and alarm companies</a> <br />
-  * <a href="https://www.naukri.com/technology-retail-jobs" target="_blank" rel="noopener noreferrer">Technology and electronics retailers</a> <br />
-  * <a href="https://www.naukri.com/facilities-management-jobs" target="_blank" rel="noopener noreferrer">Facilities management companies</a> <br />
-  * <a href="https://www.naukri.com/corporate-security-jobs" target="_blank" rel="noopener noreferrer">Corporate security departments</a> <br />
-</p>
-
+                *{" "}
+                <a
+                  href="https://www.naukri.com/security-system-integration-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Security system integration firms
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/surveillance-alarm-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Surveillance and alarm companies
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/technology-retail-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Technology and electronics retailers
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/facilities-management-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facilities management companies
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/corporate-security-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Corporate security departments
+                </a>{" "}
+                <br />
+              </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>
   );
 }
-

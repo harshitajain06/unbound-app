@@ -2,17 +2,17 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Script from 'next/script'
-
+import Script from "next/script";
 
 export default function delivery_person() {
   const handleGoBack = () => {
     router.back();
   };
-return (
+  return (
     <Layout>
       <Head>
-         
+        <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -50,29 +50,77 @@ return (
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
+            
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Familiarity with local routes <br />
-                * Use of navigation apps <br />
-                * Basic customer service skills <br />
-                {" "}
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=-tAxc6wkcc8&pp=ygUrTWFzdGVyaW5nIExvY2FsIFJvdXRlcyBhcyBhIERlbGl2ZXJ5IERyaXZlcg%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Familiarity with local routes
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=zyEDFM_i3uU&pp=ygUkVXNpbmcgTmF2aWdhdGlvbiBBcHBzIGZvciBEZWxpdmVyaWVz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Use of navigation apps{" "}
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=uaQkJjyNJj0&pp=ygUuQ3VzdG9tZXIgU2VydmljZSBTa2lsbHMgZm9yIERlbGl2ZXJ5IFBlcnNvbm5lbA%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Basic customer service skills{" "}
+                </a>{" "}
+                <br />
               </p>
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-  * <a href="https://www.naukri.com/food-delivery-jobs" target="_blank" rel="noopener noreferrer">Food delivery platforms</a> <br /> 
-  * <a href="https://www.naukri.com/e-commerce-jobs" target="_blank" rel="noopener noreferrer">E-commerce companies</a> <br /> 
-  * <a href="https://www.naukri.com/logistics-courier-jobs" target="_blank" rel="noopener noreferrer">Courier and logistics services</a> <br /> 
-  * <a href="https://www.naukri.com/grocery-delivery-jobs" target="_blank" rel="noopener noreferrer">Grocery delivery services</a> <br /> 
-</p>
-
+                *{" "}
+                <a
+                  href="https://www.naukri.com/food-delivery-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Food delivery platforms
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/e-commerce-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  E-commerce companies
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/logistics-courier-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Courier and logistics services
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/grocery-delivery-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Grocery delivery services
+                </a>{" "}
+                <br />
+              </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>
   );
 }
-

@@ -20,12 +20,12 @@ export default function english_learner() {
           <h1 className="text-4xl md:text-4xl font-bold  text-lime-200">
             LEARN ENGLISH!
           </h1>
-          <h2 className="text-4xl md:text-2xl mb-4 text-green-200 mb-8">
+          <h2 className="text-4xl md:text-l mb-4 text-green-200 mb-8">
             PICK YOUR LANGUAGE
           </h2>
 
           {/* Language switchers */}
-          <div className="grid grid-cols-2 gap-4 justify-items-center mt-4 px-80 text-3xl" style={{ fontFamily: 'Times, serif' }}>
+          <div className="grid grid-cols-2 gap-4 justify-items-center mt-4 px-80 text-l" style={{ fontFamily: 'Times, serif' }}>
             <div className="border-4 w-full max-w-48 ... h-12 ... px-8 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
               <h3 className="md:text-sm  mb-4 text-green-300">
                 <a
@@ -40,7 +40,7 @@ export default function english_learner() {
             </div>
 
             <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-              <h3 className="text-2xl md:text-sm  mb-4 text-green-300">
+              <h3 className="text-l md:text-sm  mb-4 text-green-300">
                 <a
                   href="https://www.youtube.com/watch?v=WmRr5x-KV1Y&list=PLnE07AIBtg_KcYOnidGx_SVg-mhvQb7-7"
                   target="_blank"
@@ -53,7 +53,7 @@ export default function english_learner() {
             </div>
 
             <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-              <h3 className="text-2xl md:text-sm mb-4 text-green-300">
+              <h3 className="text-l md:text-sm mb-4 text-green-300">
                 <a
                   href="https://www.youtube.com/watch?v=d7QkMiBOZdk&list=PLsRjuO3afXH2oWYCEAXRlQzqtYvcW2rTE"
                   target="_blank"
@@ -66,7 +66,7 @@ export default function english_learner() {
             </div>
 
             <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300  ">
-              <h3 className="text-2xl md:text-sm mb-4 text-green-300">
+              <h3 className="text-l md:text-sm mb-4 text-green-300">
                 <a
                   href="https://www.youtube.com/watch?v=vnk4LYT0xhc&list=PLKEI4M7n-St968Bu4-JTYG4QWdZ0JTjdH"
                   target="_blank"
@@ -79,7 +79,7 @@ export default function english_learner() {
             </div>
 
             <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-              <h3 className="text-2xl md:text-sm mb-4 text-green-300">
+              <h3 className="text-l md:text-sm mb-4 text-green-300">
               <a
                   href="https://www.youtube.com/watch?v=oxjILX9uUS0&list=PL6cUDoseFhVC4xJ_gBvwTLu_lQB8Er1x0"
                   target="_blank"
@@ -92,7 +92,7 @@ export default function english_learner() {
             </div>
 
             <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300  ">
-              <h3 className="text-2xl md:text-sm mb-4 text-green-300">
+              <h3 className="text-l md:text-sm mb-4 text-green-300">
               <a
                   href="https://www.youtube.com/watch?v=axCsKrwav8M"
                   target="_blank"
@@ -105,7 +105,7 @@ export default function english_learner() {
             </div>
 
             <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-              <h3 className="text-2xl md:text-sm mb-4 text-green-300">
+              <h3 className="text-l md:text-sm mb-4 text-green-300">
               <a
                   href="https://www.youtube.com/watch?v=Gm9Zhz9x3Kc&list=PLQxsuJ2T7pLMlE50gKnCct1leP4Na2bY8"
                   target="_blank"
@@ -118,7 +118,7 @@ export default function english_learner() {
             </div>
 
             <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300  ">
-              <h3 className="text-2xl md:text-sm mb-4 text-green-300">
+              <h3 className="text-l md:text-sm mb-4 text-green-300">
               <a
                   href="https://www.youtube.com/watch?v=OrjEvwy8VJA"
                   target="_blank"
@@ -131,7 +131,7 @@ export default function english_learner() {
             </div>
 
             <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-              <h3 className="text-2xl md:text-sm mb-4 text-green-300">
+              <h3 className="text-l md:text-sm mb-4 text-green-300">
               <a
                   href="https://www.youtube.com/watch?v=ytzTlZy-1xA&list=PLXYb1GQQ50hpMO4FA4f9XpI_l19Gq5I29"
                   target="_blank"
@@ -144,7 +144,7 @@ export default function english_learner() {
             </div>
 
             <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300  ">
-              <h3 className="text-2xl md:text-sm mb-4 text-green-300">
+              <h3 className="text-l md:text-sm mb-4 text-green-300">
               <a
                   href="https://www.youtube.com/watch?v=yEf-kYA8PRM&list=PLMvw7NZyx2D0fpz2Gg26JZEdIKybNzWye"
                   target="_blank"
@@ -157,7 +157,7 @@ export default function english_learner() {
             </div>
 
             <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-              <h3 className="text-2xl md:text-sm mb-4 text-green-300">
+              <h3 className="text-l md:text-sm mb-4 text-green-300">
               <a
                   href="https://www.youtube.com/watch?v=yEf-kYA8PRM&list=PLMvw7NZyx2D0fpz2Gg26JZEdIKybNzWye"
                   target="_blank"

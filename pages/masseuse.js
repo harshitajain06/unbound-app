@@ -2,17 +2,17 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Script from 'next/script'
-
+import Script from "next/script";
 
 export default function masseuse() {
   const handleGoBack = () => {
     router.back();
   };
-return (
+    return (
     <Layout>
       <Head>
-         
+      <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -51,27 +51,75 @@ return (
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Massage techniques <br />
-                * Anatomy and physiology basics <br />
-                * Client communication skills <br />{" "}
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=1sr8jubMsi0&pp=ygUdOiBNYXNzYWdlIFRlY2huaXF1ZXMgVHV0b3JpYWw%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Massage techniques
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=yr2-rMt0gAg&pp=ygUrQW5hdG9teSBhbmQgUGh5c2lvbG9neSBCYXNpY3MgZm9yIE1hc3NldXNlcw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Anatomy and physiology basics{" "}
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=2wKaV1CEHpI&pp=ygUlRWZmZWN0aXZlIENvbW11bmljYXRpb24gZm9yIE1hc3NldXNlcw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Client communication skills
+                </a>{" "}
+                <br />
               </p>
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-  * <a href="https://www.naukri.com/spa-wellness-jobs" target="_blank" rel="noopener noreferrer">Spa and wellness centers</a> <br />
-  * <a href="https://www.naukri.com/massage-therapy-jobs" target="_blank" rel="noopener noreferrer">Massage therapy clinics</a> <br />
-  * <a href="https://www.naukri.com/resort-hotel-jobs" target="_blank" rel="noopener noreferrer">Resorts and hotels</a> <br />
-  * <a href="https://www.naukri.com/fitness-health-club-jobs" target="_blank" rel="noopener noreferrer">Fitness and health clubs</a> <br />
-</p>
-
+                *{" "}
+                <a
+                  href="https://www.naukri.com/spa-wellness-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Spa and wellness centers
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/massage-therapy-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Massage therapy clinics
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/resort-hotel-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resorts and hotels
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/fitness-health-club-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fitness and health clubs
+                </a>{" "}
+                <br />
+              </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>
   );
 }
-

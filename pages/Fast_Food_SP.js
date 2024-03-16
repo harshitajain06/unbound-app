@@ -2,17 +2,17 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Script from 'next/script'
-
+import Script from "next/script";
 
 export default function fast_food_sp() {
   const handleGoBack = () => {
     router.back();
   };
-return (
+    return (
     <Layout>
       <Head>
-         
+      <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -52,24 +52,73 @@ return (
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Fast food menu items <br />
-                * Cash handling <br />
-                * Customer service etiquette <br />{" "}
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=_vTZI1s2SFs&pp=ygUdRmFzdCBGb29kIE1lbnUgSXRlbXMgVHV0b3JpYWw%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fast food menu items
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=1gJRzeiUd6s&pp=ygUuQ2FzaCBIYW5kbGluZyBUZWNobmlxdWVzIGZvciBGYXN0IEZvb2QgV29ya2Vycw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cash handling
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=4AZzAvy4Kck&pp=ygUnQ3VzdG9tZXIgU2VydmljZSBFdGlxdWV0dGUgaW4gRmFzdCBGb29k"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Customer service etiquette{" "}
+                </a>{" "}
+                <br />
               </p>
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-  * <a href="https://www.naukri.com/fast-food-jobs" target="_blank" rel="noopener noreferrer">Fast-food chains</a> <br />
-  * <a href="https://www.naukri.com/quick-service-restaurant-jobs" target="_blank" rel="noopener noreferrer">Quick-service restaurants</a> <br />
-  * <a href="https://www.naukri.com/food-court-jobs" target="_blank" rel="noopener noreferrer">Food courts in malls</a> <br />
-  * <a href="https://www.naukri.com/takeaway-delivery-jobs" target="_blank" rel="noopener noreferrer">Takeaway and delivery services</a> <br />
-</p>
-
+                *{" "}
+                <a
+                  href="https://www.naukri.com/fast-food-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fast-food chains
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/quick-service-restaurant-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Quick-service restaurants
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/food-court-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Food courts in malls
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/takeaway-delivery-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Takeaway and delivery services
+                </a>{" "}
+                <br />
+              </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>

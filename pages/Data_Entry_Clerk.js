@@ -2,17 +2,17 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Script from 'next/script'
-
+import Script from "next/script";
 
 export default function data_entry_clerk() {
   const handleGoBack = () => {
     router.back();
   };
-return (
+    return (
     <Layout>
       <Head>
-         
+      <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -53,27 +53,86 @@ return (
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
                 * Typing and keyboarding skills <br />
                 * Attention to detail <br />
-                * Familiarity with data entry software <br />
-                {" "}
+                * Familiarity with data entry software <br />{" "}
+              </p>
+              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=QIlI7YquuRY&pp=ygUnSW1wcm92aW5nIFR5cGluZyBhbmQgS2V5Ym9hcmRpbmcgU2tpbGxz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Typing and keyboarding skills
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=KANJBsluSXs&pp=ygUhQXR0ZW50aW9uIHRvIERldGFpbCBpbiBEYXRhIEVudHJ5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Attention to detail
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=Mou84IUIzUQ&pp=ygU_RmFtaWxpYXJpdHkgd2l0aCBkYXRhIGVudHJ5IHNvZnR3YXJlOiBVc2luZyBEYXRhIEVudHJ5IFNvZnR3YXJl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Familiarity with data entry software
+                </a>{" "}
+                <br />
               </p>
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-  * <a href="https://www.naukri.com/it-data-entry-jobs" target="_blank" rel="noopener noreferrer">IT companies and tech firms</a> <br />
-  * <a href="https://www.naukri.com/administrative-data-entry-jobs" target="_blank" rel="noopener noreferrer">Administrative offices</a> <br />
-  * <a href="https://www.naukri.com/online-retail-data-entry-jobs" target="_blank" rel="noopener noreferrer">Online retail and e-commerce businesses</a> <br />
-  * <a href="https://www.naukri.com/data-processing-jobs" target="_blank" rel="noopener noreferrer">Data processing companies</a> <br />
-  * <a href="https://www.naukri.com/government-data-entry-jobs" target="_blank" rel="noopener noreferrer">Government offices and agencies</a> <br />
-</p>
-
+                *{" "}
+                <a
+                  href="https://www.naukri.com/it-data-entry-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  IT companies and tech firms
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/administrative-data-entry-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Administrative offices
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/online-retail-data-entry-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Online retail and e-commerce businesses
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/data-processing-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Data processing companies
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/government-data-entry-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Government offices and agencies
+                </a>{" "}
+                <br />
+              </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>
   );
 }
-

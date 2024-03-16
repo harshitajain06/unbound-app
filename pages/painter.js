@@ -3,17 +3,16 @@ import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
-
 export default function painter() {
-
   const handleGoBack = () => {
     router.back();
   };
-  
-  return (
+
+    return (
     <Layout>
       <Head>
-         
+      <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -52,28 +51,83 @@ export default function painter() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Surface preparation <br />
-                * Painting techniques <br />
-                * Color matching <br />{" "}
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=ah5K8PUCwns&pp=ygUrU3VyZmFjZSBQcmVwYXJhdGlvbiBUZWNobmlxdWVzIGZvciBQYWludGluZw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Surface preparation
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=bNnlz_4xJD0&pp=ygUgQ29sb3IgTWF0Y2hpbmcgVGlwcyBmb3IgUGFpbnRlcnM%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Color matching{" "}
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=rcfMSeilPkg&pp=ygUcUGFpbnRpbmcgVGVjaG5pcXVlcyBUdXRvcmlhbA%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Painting techniques
+                </a>{" "}
+                <br />
               </p>
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-  * <a href="https://www.naukri.com/construction-painter-jobs" target="_blank" rel="noopener noreferrer">Construction and contracting companies</a> <br />
-  * <a href="https://www.naukri.com/residential-commercial-painting-jobs" target="_blank" rel="noopener noreferrer">Residential and commercial painting services</a> <br />
-  * <a href="https://www.naukri.com/renovation-remodeling-jobs" target="_blank" rel="noopener noreferrer">Renovation and remodeling projects</a> <br />
-  * <a href="https://www.naukri.com/automotive-painting-jobs" target="_blank" rel="noopener noreferrer">Automotive painting workshops</a> <br />
-  * <a href="https://www.naukri.com/furniture-manufacturing-jobs" target="_blank" rel="noopener noreferrer">Furniture manufacturing and finishing units</a> <br />
-</p>
-
+                *{" "}
+                <a
+                  href="https://www.naukri.com/construction-painter-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Construction and contracting companies
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/residential-commercial-painting-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Residential and commercial painting services
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/renovation-remodeling-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Renovation and remodeling projects
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/automotive-painting-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Automotive painting workshops
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/furniture-manufacturing-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Furniture manufacturing and finishing units
+                </a>{" "}
+                <br />
+              </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>
   );
 }
-

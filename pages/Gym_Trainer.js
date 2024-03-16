@@ -2,17 +2,17 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Script from 'next/script'
-
+import Script from "next/script";
 
 export default function gym_trainer() {
   const handleGoBack = () => {
     router.back();
   };
-return (
+  return (
     <Layout>
       <Head>
-         
+        <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -50,29 +50,77 @@ return (
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
+              
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Fitness principles and techniques <br />
-                * Anatomy and physiology basics <br />
-                * Customer service and communication skills <br />
-                {" "}
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=DcTTOsptCMk&pp=ygUqRml0bmVzcyBQcmluY2lwbGVzIGFuZCBUZWNobmlxdWVzIFR1dG9yaWFs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fitness principles and techniques
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=nuzT2iJESFA&pp=ygUuQW5hdG9teSBhbmQgUGh5c2lvbG9neSBCYXNpY3MgZm9yIEd5bSBUcmFpbmVycw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Anatomy and physiology basics{" "}
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=4L_xcWCOQOA&pp=ygUzQ3VzdG9tZXIgU2VydmljZSBhbmQgQ29tbXVuaWNhdGlvbiBmb3IgR3ltIFRyYWluZXJz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Customer service and communication skills
+                </a>{" "}
+                <br />
               </p>
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-  * <a href="https://www.naukri.com/fitness-center-jobs" target="_blank" rel="noopener noreferrer">Fitness centers and gyms</a> <br />
-  * <a href="https://www.naukri.com/health-club-jobs" target="_blank" rel="noopener noreferrer">Health clubs and wellness centers</a> <br />
-  * <a href="https://www.naukri.com/corporate-fitness-jobs" target="_blank" rel="noopener noreferrer">Corporate fitness facilities</a> <br />
-  * <a href="https://www.naukri.com/personal-training-jobs" target="_blank" rel="noopener noreferrer">Personal training studios</a> <br />
-</p>
-
+                *{" "}
+                <a
+                  href="https://www.naukri.com/fitness-center-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fitness centers and gyms
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/health-club-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Health clubs and wellness centers
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/corporate-fitness-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Corporate fitness facilities
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/personal-training-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Personal training studios
+                </a>{" "}
+                <br />
+              </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>
   );
 }
-

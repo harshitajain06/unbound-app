@@ -8,10 +8,11 @@ export default function nurse() {
   const handleGoBack = () => {
     router.back();
   };
-  return (
+    return (
     <Layout>
       <Head>
-         
+      <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -50,9 +51,32 @@ export default function nurse() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Basic patient care <br />
-                * Medical equipment usage <br />
-                * Hygiene and cleanliness standards <br />{" "}
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=e9U-r9D6oVw&pp=ygUvOiBCYXNpYyBQYXRpZW50IENhcmUgU2tpbGxzIGZvciBOdXJzZXMvV2FyZGJveXM%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Basic patient care
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=klCCm5annDU&pp=ygUuVXNhZ2Ugb2YgTWVkaWNhbCBFcXVpcG1lbnQgZm9yIE51cnNlcy9XYXJkYm95cw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Medical equipment usag
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=klCCm5annDU&pp=ygUuVXNhZ2Ugb2YgTWVkaWNhbCBFcXVpcG1lbnQgZm9yIE51cnNlcy9XYXJkYm95cw%3D%3D
+                  https://www.youtube.com/watch?v=_O4B0Nmfr40&pp=ygUZQ2xlYW5saW5lc3MgaW4gSGVhbHRoY2FyZQ%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hygiene and cleanliness standards
+                </a>{" "}
+                <br />
               </p>
             </h3>
 

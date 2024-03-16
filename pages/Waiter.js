@@ -3,7 +3,6 @@ import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
-
 export default function waiter() {
   const handleGoBack = () => {
     router.back();
@@ -11,7 +10,8 @@ export default function waiter() {
   return (
     <Layout>
       <Head>
-         
+        <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -50,30 +50,85 @@ export default function waiter() {
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
+             
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Menu items and specials <br />
-                * Table service etiquette <br />
-                * Cash handling for bill settlements<br />
-                {" "}
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=5swBp9tGKck&pp=ygUgTGVhcm5pbmcgTWVudSBJdGVtcyBhbmQgU3BlY2lhbHM%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Menu items and specials
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=6XUfzRVfauk&pp=ygUhIFRhYmxlIFNlcnZpY2UgRXRpcXVldHRlIFR1dG9yaWFs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Table service etiquette
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=1gJRzeiUd6s&pp=ygUZQ2FzaCBIYW5kbGluZyBmb3IgV2FpdGVycw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cash handling for bill settlements
+                </a>{" "}
+                <br />
               </p>
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-  * <a href="https://www.naukri.com/restaurant-cafe-jobs" target="_blank" rel="noopener noreferrer">Restaurants and cafes</a> <br />
-  * <a href="https://www.naukri.com/hotel-resort-jobs" target="_blank" rel="noopener noreferrer">Hotels and resorts</a> <br />
-  * <a href="https://www.naukri.com/fine-dining-jobs" target="_blank" rel="noopener noreferrer">Fine dining establishments</a> <br />
-  * <a href="https://www.naukri.com/pub-bar-jobs" target="_blank" rel="noopener noreferrer">Pubs and bars</a> <br />
-  * <a href="https://www.naukri.com/banquet-hall-event-jobs" target="_blank" rel="noopener noreferrer">Banquet halls and event venues</a> <br />
-</p>
-
+                *{" "}
+                <a
+                  href="https://www.naukri.com/restaurant-cafe-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Restaurants and cafes
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/hotel-resort-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hotels and resorts
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/fine-dining-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fine dining establishments
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/pub-bar-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pubs and bars
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/banquet-hall-event-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Banquet halls and event venues
+                </a>{" "}
+                <br />
+              </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>
   );
 }
-

@@ -3,17 +3,16 @@ import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
-
 export default function pet_caretaker() {
-
   const handleGoBack = () => {
     router.back();
   };
-  
-  return (
+
+    return (
     <Layout>
       <Head>
-         
+      <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -53,27 +52,67 @@ export default function pet_caretaker() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Understanding of different pet breeds and their needs <br />
-                * Basic knowledge of pet first aid  <br />
-                * Ability to handle and manage pets safely <br />
-                {" "}
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=Ik9dHDqlTpc&pp=ygUiVW5kZXJzdGFuZGluZyBQZXQgQnJlZWRzIGFuZCBOZWVkcw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Understanding of different pet breeds and their needs
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=s9sOynrptU0&pp=ygUdSW50cm9kdWN0aW9uIHRvIFBldCBGaXJzdCBBaWQ%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Basic knowledge of pet first aid{" "}
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=mrHSmZGSGLQ&pp=ygUVU2FmZSBIYW5kbGluZyBvZiBQZXRz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ability to handle and manage pets safely
+                </a>{" "}
+                <br />
               </p>
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-  * <a href="https://www.naukri.com/pet-care-jobs" target="_blank" rel="noopener noreferrer">Pet care services and businesses</a> <br />
-  * <a href="https://www.naukri.com/pet-grooming-jobs" target="_blank" rel="noopener noreferrer">Pet grooming salons</a> <br />
-  * <a href="https://www.naukri.com/veterinary-clinic-jobs" target="_blank" rel="noopener noreferrer">Veterinary clinics with boarding facilities</a> <br />
-</p>
-
+                *{" "}
+                <a
+                  href="https://www.naukri.com/pet-care-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pet care services and businesses
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/pet-grooming-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pet grooming salons
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/veterinary-clinic-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Veterinary clinics with boarding facilities
+                </a>{" "}
+                <br />
+              </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>
   );
 }
-

@@ -10,10 +10,11 @@ export default function shop_manager() {
     router.back();
   };
   
-  return (
+    return (
     <Layout>
       <Head>
-         
+      <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -51,11 +52,17 @@ export default function shop_manager() {
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
+              
+
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Retail management practices <br />
-                * Inventory control <br />
-                * Customer service skills <br />{" "}
-              </p>
+  * <a href="https://www.youtube.com/watch?v=5iRDd-f1nmg&list=PLWPirh4EWFpEv7x2CU-9jcXlIvBuSx7oF" target="_blank" rel="noopener noreferrer">Retail management practices</a> <br />
+  * <a href="https://www.youtube.com/watch?v=yy5VHKUqGpM&pp=ygUvIEludmVudG9yeSBDb250cm9sIFRlY2huaXF1ZXMgZm9yIFNob3AgTWFuYWdlcnM%3D" target="_blank" rel="noopener noreferrer">nventory control</a> <br />
+  * <a href="https://www.youtube.com/watch?v=2MrBwbA3SBw&pp=ygUodXN0b21lciBTZXJ2aWNlIFNraWxscyBmb3IgU2hvcCBNYW5hZ2Vycw%3D%3D" target="_blank" rel="noopener noreferrer">Customer service skills</a> <br />
+</p>
+
+
+
+
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">

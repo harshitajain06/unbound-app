@@ -2,18 +2,15 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Script from 'next/script'
-
+import Script from "next/script";
 
 export default function cashier() {
   const handleGoBack = () => {
     router.back();
   };
-return (
+  return (
     <Layout>
-      <Head>
-         
-        </Head>
+      <Head></Head>
       <section className="py-16">
         <div className=" mx-auto text-center md:w-2/3 lg:w-1/2">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-lime-200">
@@ -50,32 +47,85 @@ return (
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
+             
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Cash handling <br />
-                * Basic math skills <br />
-                * Customer service <br />
-                {" "}
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=lfHo6bYChlw&pp=ygUlQ2FzaCBIYW5kbGluZyBUZWNobmlxdWVzIGZvciBDYXNoaWVycw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cash handling
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=WTymHTX2bZg&pp=ygUibXByb3ZpbmcgQmFzaWMgTWF0aCBTa2lsbHMgY2FzaGllcg%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Basic math skills
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=C4qwBMhhNOo&pp=ygUkQ3VzdG9tZXIgU2VydmljZSBTa2lsbHMgZm9yIENhc2hpZXJz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Customer service{" "}
+                </a>{" "}
+                <br />{" "}
               </p>
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * <a href="https://www.naukri.com/retail-cashier-jobs" target="_blank" rel="noopener noreferrer">Retail stores</a> <br />
-* <a href="https://www.naukri.com/supermarket-cashier-jobs" target="_blank" rel="noopener noreferrer">Supermarkets</a> <br />
-* <a href="https://www.naukri.com/restaurant-cashier-jobs" target="_blank" rel="noopener noreferrer">Restaurants</a> <br />
-* <a href="https://www.naukri.com/bank-cashier-jobs" target="_blank" rel="noopener noreferrer">Banks </a> <br />
-* <a href="https://www.naukri.com/shopping-mall-cashier-jobs" target="_blank" rel="noopener noreferrer">Shopping malls </a> <br />
-                {" "}
+                *{" "}
+                <a
+                  href="https://www.naukri.com/retail-cashier-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Retail stores
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/supermarket-cashier-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Supermarkets
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/restaurant-cashier-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Restaurants
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/bank-cashier-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Banks{" "}
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/shopping-mall-cashier-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Shopping malls{" "}
+                </a>{" "}
+                <br />{" "}
               </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>
   );
 }
-
-
-

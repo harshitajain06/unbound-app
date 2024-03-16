@@ -2,16 +2,16 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
- 
 
 export default function beautician() {
   const handleGoBack = () => {
     router.back();
   };
-return (
+    return (
     <Layout>
       <Head>
-         
+      <title>{siteTitle}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
@@ -50,33 +50,75 @@ return (
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
               Basic Knowledge
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Beauty treatments and techniques <br />
-                * Cosmetics and skincare products <br />
-                * Client consultation skills <br />{" "}
+                *{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=r0_Yp3EDqRE&pp=ygUpQmVhdXR5IFRyZWF0bWVudHMgYW5kIFRlY2huaXF1ZXMgVHV0b3JpYWw%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Beauty treatments and techniques
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=F70SFquZdvw&pp=ygUtVW5kZXJzdGFuZGluZyBDb3NtZXRpY3MgYW5kIFNraW5jYXJlIFByb2R1Y3Rz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cosmetics and skincare products
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=z3Plijwwo-8&pp=ygUtRWZmZWN0aXZlIENsaWVudCBDb25zdWx0YXRpb24gZm9yIEJlYXV0aWNpYW5z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Client consultation skills
+                </a>{" "}
+                <br />
               </p>
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
-
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-  * <a href="https://www.naukri.com/beauty-salon-jobs" target="_blank" rel="noopener noreferrer">Beauty salons and parlors</a> <br />
-  * <a href="https://www.naukri.com/spa-wellness-jobs" target="_blank" rel="noopener noreferrer">Spa and wellness centers</a> <br />
-  * <a href="https://www.naukri.com/bridal-makeup-jobs" target="_blank" rel="noopener noreferrer">Bridal and wedding makeup services</a> <br />
-  * <a href="https://www.naukri.com/cosmetic-retail-jobs" target="_blank" rel="noopener noreferrer">Cosmetic retail outlets</a> <br />
-</p>
-
-
-
-
-
-           
+                *{" "}
+                <a
+                  href="https://www.naukri.com/beauty-salon-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Beauty salons and parlors
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/spa-wellness-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Spa and wellness centers
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/bridal-makeup-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Bridal and wedding makeup services
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/cosmetic-retail-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cosmetic retail outlets
+                </a>{" "}
+                <br />
+              </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>
   );
 }
-
