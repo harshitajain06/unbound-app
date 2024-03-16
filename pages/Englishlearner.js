@@ -3,7 +3,7 @@ import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
-export default function gym_trainer() {
+export default function english_learner() {
   const router = useRouter();
 
   const handleGoBack = () => {
