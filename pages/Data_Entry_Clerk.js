@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function data_entry_clerk() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -55,17 +60,19 @@ export default function data_entry_clerk() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * IT companies and tech firms <br />
-                * Administrative offices <br />
-                * Online retail and e-commerce businesses <br />
-                * Data processing companies <br />
-                * Government offices and agencies <br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/it-data-entry-jobs" target="_blank" rel="noopener noreferrer">IT companies and tech firms</a> <br />
+  * <a href="https://www.naukri.com/administrative-data-entry-jobs" target="_blank" rel="noopener noreferrer">Administrative offices</a> <br />
+  * <a href="https://www.naukri.com/online-retail-data-entry-jobs" target="_blank" rel="noopener noreferrer">Online retail and e-commerce businesses</a> <br />
+  * <a href="https://www.naukri.com/data-processing-jobs" target="_blank" rel="noopener noreferrer">Data processing companies</a> <br />
+  * <a href="https://www.naukri.com/government-data-entry-jobs" target="_blank" rel="noopener noreferrer">Government offices and agencies</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

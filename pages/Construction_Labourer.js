@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function construction_labourer() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -55,17 +60,20 @@ export default function construction_labourer() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Construction companies <br />
-                * Building contractors <br />
-                * Infrastructure projects <br />
-                * Real estate development sites <br />
-                * Road construction projects <br />
+  * <a href="https://www.naukri.com/construction-company-jobs" target="_blank" rel="noopener noreferrer">Construction companies</a> <br />
+  * <a href="https://www.naukri.com/building-contractor-jobs" target="_blank" rel="noopener noreferrer">Building contractors</a> <br />
+  * <a href="https://www.naukri.com/infrastructure-project-jobs" target="_blank" rel="noopener noreferrer">Infrastructure projects</a> <br />
+  * <a href="https://www.naukri.com/real-estate-development-jobs" target="_blank" rel="noopener noreferrer">Real estate development sites</a> <br />
+  * <a href="https://www.naukri.com/road-construction-jobs" target="_blank" rel="noopener noreferrer">Road construction projects</a> <br />
+
                 {" "}
               </p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

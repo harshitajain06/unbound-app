@@ -2,7 +2,7 @@
 
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
-import { useRouter } from "next/router";
+import { useRouter } from "next/router"; 
 import React, { useState } from "react";
 
 export default function TechnicalR() {
@@ -18,7 +18,11 @@ export default function TechnicalR() {
     }
   };
 
-  const technicalROptions = [
+  const handleGoBack = () => {
+    router.back();
+  };
+
+  const  technicalROptions = [
     { label: "Technical and Manual Roles", value: "Technical and Manual Roles" },
     { label: "Service and Management Roles", value: "Service and Management Roles" },
   ];
@@ -49,6 +53,7 @@ export default function TechnicalR() {
               {option.label}
             </button>
           ))}
+            
         </div>
       </section>
     </Layout>

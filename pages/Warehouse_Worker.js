@@ -1,7 +1,14 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+
 
 export default function warehouse_worker() {
+  const handleGoBack = () => {
+    router.back();
+  };
+  
   return (
     <Layout>
       <Head>
@@ -57,14 +64,14 @@ export default function warehouse_worker() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Basic inventory procedures <br />
-              * Safe use of warehouse equipment <br />
-              * Attention to detail for order accuracy <br />
+  * <a href="https://www.naukri.com/distribution-center-jobs" target="_blank" rel="noopener noreferrer">Basic inventory procedures</a> <br />
+  * <a href="https://www.naukri.com/logistics-supply-chain-jobs" target="_blank" rel="noopener noreferrer">Safe use of warehouse equipment</a> <br />
+  * <a href="https://www.naukri.com/ecommerce-fulfillment-jobs" target="_blank" rel="noopener noreferrer">Attention to detail for order accuracy</a> <br />
+</p>
 
-                {" "}
-              </p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>

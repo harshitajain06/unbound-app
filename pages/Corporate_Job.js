@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function corporate_jobs() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -57,18 +62,18 @@ export default function corporate_jobs() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Multinational corporations <br />
-              * Financial institutions <br />
-              * IT and technology companies <br />
-              * Consulting firms <br />
-              * Leading companies in various sectors <br />
+  * <a href="https://www.naukri.com/corporate-multinational-jobs?k=corporate%20multinational&nignbevent_src=jobsearchDeskGNB" target="_blank" rel="noopener noreferrer">Multinational corporations</a> <br />
+  * <a href="https://www.naukri.com/corporate-financial-jobs?k=corporate%20financial&nignbevent_src=jobsearchDeskGNB" target="_blank" rel="noopener noreferrer">Financial institutions</a> <br />
+  * <a href="https://www.naukri.com/corporate-jobs?k=corporate&nignbevent_src=jobsearchDeskGNB&functionAreaIdGid=8" target="_blank" rel="noopener noreferrer">IT and technology companies</a> <br />
+  * <a href="https://www.naukri.com/corporate-jobs?k=corporate&nignbevent_src=jobsearchDeskGNB&functionAreaIdGid=19" target="_blank" rel="noopener noreferrer">Consulting firms</a> <br />
+</p>
 
-                {" "}
-              </p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

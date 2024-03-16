@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
-import { useRouter } from "next/router";
-import React, { useState } from "react";
+import { useRouter } from "next/router"; import React, { useState } from "react";
 
 export default function SalesMarketingU() {
   const [selectedOption, setSelectedOption] = useState(""); // State for selected option
@@ -16,7 +15,11 @@ export default function SalesMarketingU() {
     }
   };
 
-  const salesMarketingUOptions = [
+  const handleGoBack = () => {
+    router.back();
+  };
+
+  const  salesMarketingUOptions = [
     {
       label: "Operational and Manual Labor Roles",
       value: "Operational and Manual Labor Roles",

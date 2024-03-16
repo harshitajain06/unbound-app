@@ -1,7 +1,15 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+
 
 export default function ss_tech() {
+
+  const handleGoBack = () => {
+    router.back();
+  };
+  
   return (
     <Layout>
       <Head>
@@ -55,17 +63,19 @@ export default function ss_tech() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Security system integration firms <br />
-                * Surveillance and alarm companies <br />
-                * Technology and electronics retailers  <br />
-                * Facilities management companies  <br />
-                * Corporate security departments<br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/security-system-integration-jobs" target="_blank" rel="noopener noreferrer">Security system integration firms</a> <br />
+  * <a href="https://www.naukri.com/surveillance-alarm-jobs" target="_blank" rel="noopener noreferrer">Surveillance and alarm companies</a> <br />
+  * <a href="https://www.naukri.com/technology-retail-jobs" target="_blank" rel="noopener noreferrer">Technology and electronics retailers</a> <br />
+  * <a href="https://www.naukri.com/facilities-management-jobs" target="_blank" rel="noopener noreferrer">Facilities management companies</a> <br />
+  * <a href="https://www.naukri.com/corporate-security-jobs" target="_blank" rel="noopener noreferrer">Corporate security departments</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

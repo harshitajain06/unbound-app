@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function microfinance_officer() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -58,17 +63,19 @@ export default function microfinance_officer() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Microfinance institutions <br />
-                * Non-governmental organizations (NGOs) <br />
-                * Rural and urban development projects <br />
-                * Cooperative banks <br />
-                * Financial inclusion programs. <br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/microfinance-institution-jobs" target="_blank" rel="noopener noreferrer">Microfinance institutions</a> <br />
+  * <a href="https://www.naukri.com/ngo-microfinance-jobs" target="_blank" rel="noopener noreferrer">Non-governmental organizations (NGOs)</a> <br />
+  * <a href="https://www.naukri.com/rural-urban-development-jobs" target="_blank" rel="noopener noreferrer">Rural and urban development projects</a> <br />
+  * <a href="https://www.naukri.com/cooperative-bank-jobs" target="_blank" rel="noopener noreferrer">Cooperative banks</a> <br />
+  * <a href="https://www.naukri.com/financial-inclusion-jobs" target="_blank" rel="noopener noreferrer">Financial inclusion programs</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

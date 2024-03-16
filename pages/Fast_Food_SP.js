@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function fast_food_sp() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -55,15 +60,15 @@ export default function fast_food_sp() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Fast-food chains  <br />
-                * Quick-service restaurants  <br />
-                * Food courts in malls <br />
-                * Takeaway and delivery services  <br />
-                * Popular local fast food outlets <br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/fast-food-jobs" target="_blank" rel="noopener noreferrer">Fast-food chains</a> <br />
+  * <a href="https://www.naukri.com/quick-service-restaurant-jobs" target="_blank" rel="noopener noreferrer">Quick-service restaurants</a> <br />
+  * <a href="https://www.naukri.com/food-court-jobs" target="_blank" rel="noopener noreferrer">Food courts in malls</a> <br />
+  * <a href="https://www.naukri.com/takeaway-delivery-jobs" target="_blank" rel="noopener noreferrer">Takeaway and delivery services</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>

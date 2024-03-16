@@ -22,7 +22,11 @@ export default function Handmovements() {
     }
   };
 
-  const handmovementsOptions = [
+  const handleGoBack = () => {
+    router.back();
+  };
+
+  const  handmovementsOptions = [
     { label: "Technical", value: "Technical" },
     { label: "Service", value: "Service" },
     { label: "Problem Solving", value: "Problem Solving" },
@@ -46,9 +50,9 @@ export default function Handmovements() {
 
         <div className="grid grid-cols-2 gap-4 mt-4">
           {handmovementsOptions.map((option) => (
-            <button
+             <button
               key={option.value}
-              className={`border-4 px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
+              className={` border-4  px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
                 selectedOption === option.value ? "bg-zinc-800 text-white" : ""
               }`}
               onClick={() => handleButtonClick(option.value)}
@@ -56,6 +60,8 @@ export default function Handmovements() {
               {option.label}
             </button>
           ))}
+           
+          
         </div>
       </section>
     </Layout>

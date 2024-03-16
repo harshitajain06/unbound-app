@@ -22,7 +22,11 @@ export default function BlindDeaf() {
     }
   };
 
-  const BlindDeafOptions = [
+  const handleGoBack = () => {
+    router.back();
+  };
+
+  const  BlindDeafOptions = [
     { label: "Technical", value: "Technical" },
     { label: "Service", value: "Service" },
     { label: "Problem Solving", value: "Problem Solving" },
@@ -46,9 +50,9 @@ export default function BlindDeaf() {
 
         <div className="grid grid-cols-2 gap-4 mt-4">
           {BlindDeafOptions.map((option) => (
-            <button
+             <button
               key={option.value}
-              className={`border-4 px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
+              className={` border-4  px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
                 selectedOption === option.value ? "bg-zinc-800 text-white" : ""
               }`}
               onClick={() => handleButtonClick(option.value)}
@@ -56,6 +60,7 @@ export default function BlindDeaf() {
               {option.label}
             </button>
           ))}
+           
         </div>
       </section>
     </Layout>

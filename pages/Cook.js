@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function cook() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -54,17 +59,19 @@ export default function cook() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Restaurants and cafes  <br />
-                * Hotels and resorts  <br />
-                * Catering services <br />
-                * Food and beverage establishments  <br />
-                * Cafeterias and canteens <br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/restaurant-cafe-jobs" target="_blank" rel="noopener noreferrer">Restaurants and cafes</a> <br />
+  * <a href="https://www.naukri.com/hotel-resort-jobs" target="_blank" rel="noopener noreferrer">Hotels and resorts</a> <br />
+  * <a href="https://www.naukri.com/catering-services-jobs" target="_blank" rel="noopener noreferrer">Catering services</a> <br />
+  * <a href="https://www.naukri.com/food-beverage-jobs" target="_blank" rel="noopener noreferrer">Food and beverage establishments</a> <br />
+  * <a href="https://www.naukri.com/cafeteria-canteen-jobs" target="_blank" rel="noopener noreferrer">Cafeterias and canteens</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

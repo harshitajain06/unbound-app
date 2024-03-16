@@ -1,7 +1,15 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+
 
 export default function plumber() {
+
+  const handleGoBack = () => {
+    router.back();
+  };
+  
   return (
     <Layout>
       <Head>
@@ -54,17 +62,19 @@ export default function plumber() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Plumbing contractors <br />
-                * Construction companies <br />
-                * Maintenance services<br />
-                * Real estate development projects <br />
-                * Facilities management companies<br />
-                 {" "}
-              </p>
+  * <a href="https://www.naukri.com/plumbing-contractor-jobs" target="_blank" rel="noopener noreferrer">Plumbing contractors</a> <br />
+  * <a href="https://www.naukri.com/construction-company-jobs" target="_blank" rel="noopener noreferrer">Construction companies</a> <br />
+  * <a href="https://www.naukri.com/maintenance-service-jobs" target="_blank" rel="noopener noreferrer">Maintenance services</a> <br />
+  * <a href="https://www.naukri.com/real-estate-development-jobs" target="_blank" rel="noopener noreferrer">Real estate development projects</a> <br />
+  * <a href="https://www.naukri.com/facilities-management-jobs" target="_blank" rel="noopener noreferrer">Facilities management companies</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

@@ -2,15 +2,19 @@
 
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
-
+import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Box from "../components/Box";
 
 export default function ProblemSolvingBD() {
   const [textBoxValue, setTextBoxValue] = useState("");
 
   const handleTextBoxChange = (e) => {
     setTextBoxValue(e.target.value);
+  };
+
+
+  const handleGoBack = () => {
+    router.back();
   };
 
   return (
@@ -26,35 +30,70 @@ export default function ProblemSolvingBD() {
         <p className="text-cyan-200"></p>
 
         <a href={"/Packaging_A"}>
-        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
           <p className="text-lime-200">Packaging assistants</p>
         </button>
         </a>
 
         <a href={"/Janitorial_S_A"}>
-        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
           <p className="text-lime-200">Janitorial Services Assistant</p>
         </button>
         </a>
 
         <a href={"/Kitchen_A"}>
-        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
           <p className="text-lime-200">Kitchen assistants</p>
         </button>
         </a>
 
         <a href={"/Customer_S_R"}>
-        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
           <p className="text-lime-200">Customer Service Representative</p>
         </button>
         </a>
 
         <a href={"/Warehouse_Manager"}>
-        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
           <p className="text-lime-200">Warehouse manager</p>
         </button>
         </a>
-
+         
+      </section>
+    </Layout>
+  );
+}           Go Back
+          </button>
+      </section>
+    </Layout>
+  );
+}           Go Back
+          </button>
+      </section>
+    </Layout>
+  );
+}           Go Back
+          </button>
+      </section>
+    </Layout>
+  );
+}           Go Back
+          </button>
+      </section>
+    </Layout>
+  );
+}           Go Back
+          </button>
+      </section>
+    </Layout>
+  );
+}           Go Back
+          </button>
+      </section>
+    </Layout>
+  );
+}           Go Back
+          </button>
       </section>
     </Layout>
   );

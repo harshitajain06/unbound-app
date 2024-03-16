@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function library_assistant() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -56,18 +61,17 @@ export default function library_assistant() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Educational institutions (schools, colleges, universities) <br />
-              * Public libraries <br />
-              * Private libraries <br />
-              * Research institutions <br />
+  * <a href="https://www.naukri.com/educational-institution-jobs-in-bangalore" target="_blank" rel="noopener noreferrer">Educational institutions (schools, colleges, universities)</a> <br />
+  * <a href="https://www.naukri.com/librarian-jobs?k=librarian&nignbevent_src=jobsearchDeskGNB" target="_blank" rel="noopener noreferrer">Public libraries</a> <br />
+  * <a href="https://www.naukri.com/library-assistant-jobs?k=library%20assistant&nignbevent_src=jobsearchDeskGNB&functionAreaIdGid=30" target="_blank" rel="noopener noreferrer">Research institutions</a> <br />
+</p>
 
-
-                {" "}
-              </p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

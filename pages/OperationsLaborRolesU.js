@@ -1,16 +1,19 @@
 // // pages/newpage.js
-
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
-
+import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Box from "../components/Box";
 
 export default function OperationsLaborRolesU() {
   const [textBoxValue, setTextBoxValue] = useState("");
 
   const handleTextBoxChange = (e) => {
     setTextBoxValue(e.target.value);
+  };
+
+
+  const handleGoBack = () => {
+    router.back();
   };
 
   return (
@@ -48,9 +51,8 @@ export default function OperationsLaborRolesU() {
           <p className="text-lime-200">Construction Laborer</p>
         </button>
         </a>
-
+         
       </section>
     </Layout>
   );
-}
-// }
+} 

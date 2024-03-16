@@ -1,10 +1,9 @@
-
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Layout, { siteTitle } from "../components/Layout";
 
-export default function Question1() {
+ export default function Question1() {
   const [selectedOption, setSelectedOption] = useState(""); // State for selected option
   const router = useRouter();
 
@@ -16,6 +15,11 @@ export default function Question1() {
       router.push("/NDisabled");
     }
   };
+
+  const handleGoBack = () => {
+    router.back();
+  };
+
 
   const Question1Options = [
     { label: "Yes", value: "Disabled" },
@@ -48,6 +52,7 @@ export default function Question1() {
               {option.label}
             </button>
           ))}
+           
         </div>
       </section>
     </Layout>

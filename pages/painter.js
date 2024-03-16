@@ -1,7 +1,15 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+
 
 export default function painter() {
+
+  const handleGoBack = () => {
+    router.back();
+  };
+  
   return (
     <Layout>
       <Head>
@@ -54,17 +62,19 @@ export default function painter() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Construction and contracting companies  <br />
-                * Residential and commercial painting services  <br />
-                * Renovation and remodeling projects <br />
-                * Automotive painting workshops  <br />
-                * Furniture manufacturing and finishing units <br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/construction-painter-jobs" target="_blank" rel="noopener noreferrer">Construction and contracting companies</a> <br />
+  * <a href="https://www.naukri.com/residential-commercial-painting-jobs" target="_blank" rel="noopener noreferrer">Residential and commercial painting services</a> <br />
+  * <a href="https://www.naukri.com/renovation-remodeling-jobs" target="_blank" rel="noopener noreferrer">Renovation and remodeling projects</a> <br />
+  * <a href="https://www.naukri.com/automotive-painting-jobs" target="_blank" rel="noopener noreferrer">Automotive painting workshops</a> <br />
+  * <a href="https://www.naukri.com/furniture-manufacturing-jobs" target="_blank" rel="noopener noreferrer">Furniture manufacturing and finishing units</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

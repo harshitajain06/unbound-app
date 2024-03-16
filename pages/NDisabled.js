@@ -16,6 +16,11 @@ export default function NDisabled() {
     }
   };
 
+  const handleGoBack = () => {
+    router.back();
+  };
+
+
   const NDisabledOptions = [
     { label: "Urban area", value: "Urban area" },
     { label: "Rural area", value: "Rural area" },
@@ -37,9 +42,9 @@ export default function NDisabled() {
 
         <div className="flex space-x-4 mt-4">
           {NDisabledOptions.map((option) => (
-            <button
+             <button
               key={option.value}
-              className={`border-4 px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
+              className={` border-4  px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
                 selectedOption === option.value ? "bg-zinc-800 text-white" : ""
               }`}
               onClick={() => handleButtonClick(option.value)}
@@ -47,6 +52,8 @@ export default function NDisabled() {
               {option.label}
             </button>
           ))}
+           
+         
         </div>
       </section>
     </Layout>

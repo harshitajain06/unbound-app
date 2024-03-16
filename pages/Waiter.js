@@ -1,7 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+
 
 export default function waiter() {
+  const handleGoBack = () => {
+    router.back();
+  };
   return (
     <Layout>
       <Head>
@@ -56,17 +62,19 @@ export default function waiter() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Restaurants and cafes <br />
-                * Hotels and resorts <br />
-                * Fine dining establishments <br />
-                * Pubs and bars <br />
-                * Banquet halls and event venues<br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/restaurant-cafe-jobs" target="_blank" rel="noopener noreferrer">Restaurants and cafes</a> <br />
+  * <a href="https://www.naukri.com/hotel-resort-jobs" target="_blank" rel="noopener noreferrer">Hotels and resorts</a> <br />
+  * <a href="https://www.naukri.com/fine-dining-jobs" target="_blank" rel="noopener noreferrer">Fine dining establishments</a> <br />
+  * <a href="https://www.naukri.com/pub-bar-jobs" target="_blank" rel="noopener noreferrer">Pubs and bars</a> <br />
+  * <a href="https://www.naukri.com/banquet-hall-event-jobs" target="_blank" rel="noopener noreferrer">Banquet halls and event venues</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function gym_trainer() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -55,18 +60,18 @@ export default function gym_trainer() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Fitness centers and gyms  <br />
-                * Health clubs and wellness centers  <br />
-                * Corporate fitness facilities  <br />
-                * Personal training studios  <br />
-                * Freelance or self-employed training services <br />
-                
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/fitness-center-jobs" target="_blank" rel="noopener noreferrer">Fitness centers and gyms</a> <br />
+  * <a href="https://www.naukri.com/health-club-jobs" target="_blank" rel="noopener noreferrer">Health clubs and wellness centers</a> <br />
+  * <a href="https://www.naukri.com/corporate-fitness-jobs" target="_blank" rel="noopener noreferrer">Corporate fitness facilities</a> <br />
+  * <a href="https://www.naukri.com/personal-training-jobs" target="_blank" rel="noopener noreferrer">Personal training studios</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

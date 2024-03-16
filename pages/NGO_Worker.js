@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function ngo_workers() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -56,17 +61,18 @@ export default function ngo_workers() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Well-established NGOs and non-profits <br />
-              * Social impact organizations <br />
-              * Community development projects <br />
-              * Health and education-focused NGOs <br />
-              * Environmental and humanitarian NGOs <br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/ngo-jobs?k=ngo&nignbevent_src=jobsearchDeskGNB&functionAreaIdGid=21" target="_blank" rel="noopener noreferrer">Social impact organizations</a> <br />
+  * <a href="https://www.naukri.com/ngo-jobs?k=ngo&nignbevent_src=jobsearchDeskGNB&functionAreaIdGid=14" target="_blank" rel="noopener noreferrer">Community development projects</a> <br />
+  * <a href="https://www.naukri.com/ngo-jobs?k=ngo&nignbevent_src=jobsearchDeskGNB&functionAreaIdGid=23&functionAreaIdGid=25" target="_blank" rel="noopener noreferrer">Health and education-focused NGOs</a> <br />
+  * <a href="https://www.naukri.com/ngo-jobs?k=ngo&nignbevent_src=jobsearchDeskGNB&functionAreaIdGid=7&functionAreaIdGid=23" target="_blank" rel="noopener noreferrer">Environmental and humanitarian NGOs</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

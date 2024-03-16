@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function kitchen_assistant() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -58,18 +63,19 @@ export default function kitchen_assistant() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Restaurants and cafes < br/>
-              * Hotels and resorts < br/>
-              * Catering services < br/>
-              * Food production units < br/>
-              * Institutional kitchens (schools, hospitals) < br/>
+  * <a href="https://www.naukri.com/restaurant-cafe-jobs" target="_blank" rel="noopener noreferrer">Restaurants and cafes</a> <br/>
+  * <a href="https://www.naukri.com/hotel-resort-jobs" target="_blank" rel="noopener noreferrer">Hotels and resorts</a> <br/>
+  * <a href="https://www.naukri.com/catering-services-jobs" target="_blank" rel="noopener noreferrer">Catering services</a> <br/>
+  * <a href="https://www.naukri.com/food-production-jobs" target="_blank" rel="noopener noreferrer">Food production units</a> <br/>
+  * <a href="https://www.naukri.com/institutional-kitchen-jobs" target="_blank" rel="noopener noreferrer">Institutional kitchens (schools, hospitals)</a> <br/>
+</p>
 
-                {" "}
-              </p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

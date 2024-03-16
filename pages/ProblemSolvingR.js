@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
-import { useRouter } from "next/router";
-import React, { useState } from "react";
+import { useRouter } from "next/router"; import React, { useState } from "react";
 
 export default function ProblemSolvingR() {
   const [selectedOption, setSelectedOption] = useState(""); // State for selected option
@@ -16,7 +15,11 @@ export default function ProblemSolvingR() {
     }
   };
 
-  const ProblemSolvingROptions = [
+  const handleGoBack = () => {
+    router.back();
+  };
+
+  const  ProblemSolvingROptions = [
     {
       label: "Operations and Labor Roles",
       value: "Operations and Labor Roles",
@@ -43,9 +46,9 @@ export default function ProblemSolvingR() {
 
         <div className="flex space-x-4 mt-4">
           {ProblemSolvingROptions.map((option) => (
-            <button
+             <button
               key={option.value}
-              className={`border-4 px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
+              className={` border-4  px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
                 selectedOption === option.value ? "bg-zinc-800 text-white" : ""
               }`}
               onClick={() => handleButtonClick(option.value)}
@@ -53,6 +56,7 @@ export default function ProblemSolvingR() {
               {option.label}
             </button>
           ))}
+           
         </div>
       </section>
     </Layout>

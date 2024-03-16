@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function community_o_cord() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -54,16 +59,21 @@ export default function community_o_cord() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Non-profit organizations <br />
-              * NGOs focused on community development <br />
-              * Government community programs <br />
-              * Social impact initiatives <br />
+             
+  * <a href="https://www.naukri.com/non-profit-organization-jobs" target="_blank" rel="noopener noreferrer">Non-profit organizations</a> <br />
+  * <a href="https://www.naukri.com/community-development-jobs" target="_blank" rel="noopener noreferrer">NGOs focused on community development</a> <br />
+  * <a href="https://www.naukri.com/government-community-jobs" target="_blank" rel="noopener noreferrer">Government community programs</a> <br />
+  * <a href="https://www.naukri.com/social-impact-jobs" target="_blank" rel="noopener noreferrer">Social impact initiatives</a> <br />
+
+
                 {" "}
               </p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

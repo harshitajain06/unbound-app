@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function beautician() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -53,18 +58,25 @@ export default function beautician() {
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
+
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Beauty salons and parlors <br />
-                * Spa and wellness centers  <br />
-                * Bridal and wedding makeup services  <br />
-                * Cosmetic retail outlets  <br />
-                * Freelance or self-employed beauticians <br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/beauty-salon-jobs" target="_blank" rel="noopener noreferrer">Beauty salons and parlors</a> <br />
+  * <a href="https://www.naukri.com/spa-wellness-jobs" target="_blank" rel="noopener noreferrer">Spa and wellness centers</a> <br />
+  * <a href="https://www.naukri.com/bridal-makeup-jobs" target="_blank" rel="noopener noreferrer">Bridal and wedding makeup services</a> <br />
+  * <a href="https://www.naukri.com/cosmetic-retail-jobs" target="_blank" rel="noopener noreferrer">Cosmetic retail outlets</a> <br />
+</p>
+
+
+
+
+
+           
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

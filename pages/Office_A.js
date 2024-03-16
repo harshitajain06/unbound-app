@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function office_assistant() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -57,18 +62,19 @@ export default function office_assistant() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Corporate offices <br/>
-              * Small to medium-sized businesses <br/>
-              * Government offices <br/>
-              * Non-profit organizations <br/>
-              * Educational institutions <br/>
+  * <a href="https://www.naukri.com/office-assistant-jobs?k=office%20assistant&nignbevent_src=jobsearchDeskGNB&qbusinessSize=211" target="_blank" rel="noopener noreferrer">Corporate offices</a> <br/>
+  * Small to medium-sized businesses <br/>
+  * <a href="https://www.naukri.com/office-assistant-jobs?k=office%20assistant&nignbevent_src=jobsearchDeskGNB&qbusinessSize=215" target="_blank" rel="noopener noreferrer">Government offices</a> <br/>
+  * <a href="https://www.naukri.com/non-profit-office-assistant-jobs" target="_blank" rel="noopener noreferrer">Non-profit organizations</a> <br/>
+  * Educational institutions <br/>
+</p>
 
-                {" "}
-              </p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

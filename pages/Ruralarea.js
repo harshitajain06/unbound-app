@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
-import { useRouter } from "next/router";
-import React, { useState } from "react";
+import { useRouter } from "next/router"; import React, { useState } from "react";
 
 export default function Ruralarea() {
   const [selectedOption, setSelectedOption] = useState(""); // State for selected option
@@ -22,7 +21,11 @@ export default function Ruralarea() {
     }
   };
 
-  const RuralareaOptions = [
+  const handleGoBack = () => {
+    router.back();
+  };
+
+  const  RuralareaOptions = [
     { label: "Technical", value: "Technical" },
     { label: "Service", value: "Service" },
     { label: "Problem Solving", value: "Problem Solving" },

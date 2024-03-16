@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function packaging_assistant() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -58,17 +63,19 @@ export default function packaging_assistant() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Manufacturing and production facilities <br/>
-              * Packaging and labeling companies <br/>
-              * E-commerce fulfillment centers <br/>
-              * Food and beverage processing units <br/>
-              * Retail and wholesale distribution centers <br/>
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/manufacturing-production-jobs" target="_blank" rel="noopener noreferrer">Manufacturing and production facilities</a> <br/>
+  * <a href="https://www.naukri.com/packaging-labeling-jobs" target="_blank" rel="noopener noreferrer">Packaging and labeling companies</a> <br/>
+  * <a href="https://www.naukri.com/ecommerce-fulfillment-jobs" target="_blank" rel="noopener noreferrer">E-commerce fulfillment centers</a> <br/>
+  * <a href="https://www.naukri.com/food-beverage-processing-jobs" target="_blank" rel="noopener noreferrer">Food and beverage processing units</a> <br/>
+  * <a href="https://www.naukri.com/retail-distribution-jobs" target="_blank" rel="noopener noreferrer">Retail and wholesale distribution centers</a> <br/>
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

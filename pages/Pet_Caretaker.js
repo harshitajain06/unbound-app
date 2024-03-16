@@ -1,7 +1,15 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+
 
 export default function pet_caretaker() {
+
+  const handleGoBack = () => {
+    router.back();
+  };
+  
   return (
     <Layout>
       <Head>
@@ -56,17 +64,17 @@ export default function pet_caretaker() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Pet care services and businesses  <br />
-                * Freelance or self-employed pet caretakers  <br />
-                * Pet grooming salons  <br />
-                * Veterinary clinics with boarding facilities  <br />
-                * Referrals and word-of-mouth from local pet owners <br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/pet-care-jobs" target="_blank" rel="noopener noreferrer">Pet care services and businesses</a> <br />
+  * <a href="https://www.naukri.com/pet-grooming-jobs" target="_blank" rel="noopener noreferrer">Pet grooming salons</a> <br />
+  * <a href="https://www.naukri.com/veterinary-clinic-jobs" target="_blank" rel="noopener noreferrer">Veterinary clinics with boarding facilities</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

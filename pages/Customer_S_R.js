@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function customer_s_r() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -57,16 +62,19 @@ export default function customer_s_r() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Call centers and customer support centers <br/>
-              * E-commerce and online platforms <br/>
-              * Banking and financial institutions <br/>
-              * Telecommunication companies <br/>
-              * Hospitality and service-oriented industries <br/>{" "}
-              </p>
+  * <a href="https://www.naukri.com/call-center-jobs" target="_blank" rel="noopener noreferrer">Call centers and customer support centers</a> <br/>
+  * <a href="https://www.naukri.com/ecommerce-customer-service-jobs" target="_blank" rel="noopener noreferrer">E-commerce and online platforms</a> <br/>
+  * <a href="https://www.naukri.com/banking-customer-service-jobs" target="_blank" rel="noopener noreferrer">Banking and financial institutions</a> <br/>
+  * <a href="https://www.naukri.com/telecom-customer-service-jobs" target="_blank" rel="noopener noreferrer">Telecommunication companies</a> <br/>
+  * <a href="https://www.naukri.com/hospitality-customer-service-jobs" target="_blank" rel="noopener noreferrer">Hospitality and service-oriented industries</a> <br/>
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

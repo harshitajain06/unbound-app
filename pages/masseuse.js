@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function masseuse() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -54,17 +59,18 @@ export default function masseuse() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Spa and wellness centers  <br />
-                * Massage therapy clinics  <br />
-                * Resorts and hotels  <br />
-                * Fitness and health clubs  <br />
-                * Freelance or self-employed massage practitioners <br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/spa-wellness-jobs" target="_blank" rel="noopener noreferrer">Spa and wellness centers</a> <br />
+  * <a href="https://www.naukri.com/massage-therapy-jobs" target="_blank" rel="noopener noreferrer">Massage therapy clinics</a> <br />
+  * <a href="https://www.naukri.com/resort-hotel-jobs" target="_blank" rel="noopener noreferrer">Resorts and hotels</a> <br />
+  * <a href="https://www.naukri.com/fitness-health-club-jobs" target="_blank" rel="noopener noreferrer">Fitness and health clubs</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

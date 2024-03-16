@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function event_logistic_c() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -55,17 +60,18 @@ export default function event_logistic_c() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Event management companies < br/>
-              * Corporate event teams < br/>
-              * Wedding planning firms < br/>
-              * Exhibition and conference organizers < br/>
+  * <a href="https://www.naukri.com/event-management-jobs" target="_blank" rel="noopener noreferrer">Event management companies</a> <br/>
+  * <a href="https://www.naukri.com/corporate-event-jobs" target="_blank" rel="noopener noreferrer">Corporate event teams</a> <br/>
+  * <a href="https://www.naukri.com/wedding-planning-jobs" target="_blank" rel="noopener noreferrer">Wedding planning firms</a> <br/>
+  * <a href="https://www.naukri.com/exhibition-conference-jobs" target="_blank" rel="noopener noreferrer">Exhibition and conference organizers</a> <br/>
+</p>
 
-                {" "}
-              </p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

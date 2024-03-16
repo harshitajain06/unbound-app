@@ -1,5 +1,4 @@
 // // pages/Urbanarea.js
-
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
@@ -24,7 +23,11 @@ export default function Urbanarea() {
     }
   };
 
-  const urbanareaOptions = [
+  const handleGoBack = () => {
+    router.back();
+  };
+
+  const  urbanareaOptions = [
     { label: "Technical", value: "Technical" },
     { label: "Service", value: "Service" },
     { label: "Problem Solving", value: "Problem Solving" },
@@ -58,6 +61,7 @@ export default function Urbanarea() {
               {option.label}
             </button>
           ))}
+           
         </div>
       </section>
     </Layout>

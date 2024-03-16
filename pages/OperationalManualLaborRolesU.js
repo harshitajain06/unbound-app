@@ -2,14 +2,19 @@
 
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Box from "../components/Box";
 
 export default function OperationalManualLaborRolesU() {
   const [textBoxValue, setTextBoxValue] = useState("");
 
   const handleTextBoxChange = (e) => {
     setTextBoxValue(e.target.value);
+  };
+
+
+  const handleGoBack = () => {
+    router.back();
   };
 
   return (
@@ -25,21 +30,24 @@ export default function OperationalManualLaborRolesU() {
         <p className="text-cyan-200"></p>
 
         <a href={"/Event_Manual_Labour"}>
-          <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
             <p className="text-lime-200">Event manual labor</p>
           </button>
         </a>
 
         <a href={"/Construction_Labourer"}>
-          <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
             <p className="text-lime-200">Construction Laborer</p>
           </button>
         </a>
         <a href={"/Delivery_Driver"}>
-          <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+         <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
             <p className="text-lime-200">Delivery Driver</p>
-          </button>
+           </button>
         </a>
+
+         
+        
       </section>
     </Layout>
   );

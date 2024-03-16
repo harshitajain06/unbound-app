@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function front_desk_r() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -53,17 +58,19 @@ export default function front_desk_r() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Corporate offices < br/>
-              * Hotels and hospitality < br/>
-              * Medical and healthcare facilities < br/>
-              * Educational institutions < br/>
-              * Co-working spaces < br/>
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/corporate-office-jobs" target="_blank" rel="noopener noreferrer">Corporate offices</a> <br />
+  * <a href="https://www.naukri.com/hotel-hospitality-jobs" target="_blank" rel="noopener noreferrer">Hotels and hospitality</a> <br />
+  * <a href="https://www.naukri.com/medical-healthcare-jobs" target="_blank" rel="noopener noreferrer">Medical and healthcare facilities</a> <br />
+  * <a href="https://www.naukri.com/educational-institution-jobs" target="_blank" rel="noopener noreferrer">Educational institutions</a> <br />
+  * <a href="https://www.naukri.com/co-working-space-jobs" target="_blank" rel="noopener noreferrer">Co-working spaces</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

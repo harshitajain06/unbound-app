@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function market_stall_coordinator() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -57,18 +62,17 @@ export default function market_stall_coordinator() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Event management companies < br/>
-              * Local markets and bazaars < br/>
-              * City or municipal event coordination departments < br/>
-              * Non-profit organizations organizing markets < br/>
-              * Festival and fair organizers < br/>
+  * <a href="https://www.naukri.com/event-management-jobs" target="_blank" rel="noopener noreferrer">Event management companies</a> <br />
+  * <a href="https://www.naukri.com/non-profit-organization-jobs" target="_blank" rel="noopener noreferrer">Non-profit organizations organizing markets</a> <br />
+  * <a href="https://www.naukri.com/festival-fair-organizer-jobs" target="_blank" rel="noopener noreferrer">Festival and fair organizers</a> <br />
+</p>
 
-                {" "}
-              </p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

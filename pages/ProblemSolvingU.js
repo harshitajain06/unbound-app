@@ -16,6 +16,11 @@ export default function ProblemSolvingU() {
     }
   };
 
+
+  const handleGoBack = () => {
+    router.back();
+  };
+
   const ProblemSolvingUOptions = [
     {
       label: "Operations and Labor Roles",
@@ -53,6 +58,7 @@ export default function ProblemSolvingU() {
               {option.label}
             </button>
           ))}
+           
         </div>
       </section>
     </Layout>

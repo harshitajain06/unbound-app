@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function manufacturing_operator() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -57,16 +62,19 @@ export default function manufacturing_operator() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Automotive manufacturing <br />
-                * Electronics and electrical goods manufacturing <br />
-                * Textile and apparel manufacturing <br />
-                * Chemical and pharmaceutical manufacturing <br />
-                * Food and beverage manufacturing <br />{" "}
-              </p>
+  * <a href="https://www.naukri.com/automotive-manufacturing-jobs" target="_blank" rel="noopener noreferrer">Automotive manufacturing</a> <br />
+  * <a href="https://www.naukri.com/electronics-manufacturing-jobs" target="_blank" rel="noopener noreferrer">Electronics and electrical goods manufacturing</a> <br />
+  * <a href="https://www.naukri.com/textile-manufacturing-jobs" target="_blank" rel="noopener noreferrer">Textile and apparel manufacturing</a> <br />
+  * <a href="https://www.naukri.com/chemical-pharmaceutical-jobs" target="_blank" rel="noopener noreferrer">Chemical and pharmaceutical manufacturing</a> <br />
+  * <a href="https://www.naukri.com/food-beverage-manufacturing-jobs" target="_blank" rel="noopener noreferrer">Food and beverage manufacturing</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

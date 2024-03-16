@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function janitorial_s_a() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -57,18 +62,19 @@ export default function janitorial_s_a() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Commercial office buildings <br />
-              * Educational institutions <br />
-              * Healthcare facilities <br />
-              * Hospitality industry (hotels, resorts) <br />
-              * Shopping malls and retail stores <br />
+  * <a href="https://www.naukri.com/commercial-office-janitorial-jobs" target="_blank" rel="noopener noreferrer">Commercial office buildings</a> <br />
+  * <a href="https://www.naukri.com/educational-janitorial-jobs" target="_blank" rel="noopener noreferrer">Educational institutions</a> <br />
+  * <a href="https://www.naukri.com/healthcare-janitorial-jobs" target="_blank" rel="noopener noreferrer">Healthcare facilities</a> <br />
+  * <a href="https://www.naukri.com/hospitality-janitorial-jobs" target="_blank" rel="noopener noreferrer">Hospitality industry (hotels, resorts)</a> <br />
+  * <a href="https://www.naukri.com/retail-janitorial-jobs" target="_blank" rel="noopener noreferrer">Shopping malls and retail stores</a> <br />
+</p>
 
-                {" "}
-              </p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function driver() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -56,19 +61,20 @@ export default function driver() {
             </h3>
 
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
-              Best Places to Work
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Ride-hailing services <br />
-                * Logistics and delivery companies <br />
-                * Commercial transport services <br />
-                * Corporate or private chauffeur services  <br />
-                * Government agencies (for public transportation) <br />
-                 {" "}
-              </p>
+            <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+  * <a href="https://www.naukri.com/ride-hailing-driver-jobs" target="_blank" rel="noopener noreferrer">Ride-hailing services</a> <br />
+  * <a href="https://www.naukri.com/logistics-delivery-driver-jobs" target="_blank" rel="noopener noreferrer">Logistics and delivery companies</a> <br />
+  * <a href="https://www.naukri.com/commercial-transport-driver-jobs" target="_blank" rel="noopener noreferrer">Commercial transport services</a> <br />
+  * <a href="https://www.naukri.com/chauffeur-driver-jobs" target="_blank" rel="noopener noreferrer">Corporate or private chauffeur services</a> <br />
+  * <a href="https://www.naukri.com/government-transportation-jobs" target="_blank" rel="noopener noreferrer">Government agencies (for public transportation)</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

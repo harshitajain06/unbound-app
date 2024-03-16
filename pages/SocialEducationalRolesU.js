@@ -2,15 +2,19 @@
 
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
-
+import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Box from "../components/Box";
 
 export default function SocialEducationalRolesU() {
   const [textBoxValue, setTextBoxValue] = useState("");
 
   const handleTextBoxChange = (e) => {
     setTextBoxValue(e.target.value);
+  };
+
+
+  const handleGoBack = () => {
+    router.back();
   };
 
   return (
@@ -26,22 +30,25 @@ export default function SocialEducationalRolesU() {
         <p className="text-cyan-200"></p>
 
         <a href={"/Teacher"}>
-        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
           <p className="text-lime-200">Teacher</p>
         </button>
         </a>
 
         <a href={"/NGO_Worker"}>
-        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
           <p className="text-lime-200">Working in NGOs</p>
         </button>
         </a>
 
         <a href={"/Community_O_C"}>
-        <button className="text-cyan-200 text-xxl font-serif h-8  mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        <button className="text-lime-200 text-xl font-serif mt-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 ...">
           <p className="text-lime-200">Community Outreach Coordinator</p>
-        </button>
+         </button>
         </a>
+
+         
+        
       </section>
     </Layout>
   );

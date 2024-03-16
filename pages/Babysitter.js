@@ -1,8 +1,13 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function babysitter() {
-  return (
+  const handleGoBack = () => {
+    router.back();
+  };
+return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -55,16 +60,14 @@ export default function babysitter() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Local communities and neighborhoods  <br />
-                * Babysitting agencies  <br />
-                * Online platforms for childcare services  <br />
-                * Family referrals and word-of-mouth recommendations <br />
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/babysitting-agency-jobs" target="_blank" rel="noopener noreferrer">Babysitting agencies</a> <br />
+</p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

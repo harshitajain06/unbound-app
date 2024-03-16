@@ -18,7 +18,11 @@ export default function Disabled() {
     }
   };
 
-  const DisabledOptions = [
+  const handleGoBack = () => {
+    router.back();
+  };
+
+  const  DisabledOptions = [
     { label: "hand movements", value: "hand movements" },
     { label: "Leg Functionality", value: "Leg Functionality" },
     { label: "Blind/Deaf", value: "Blind/Deaf" },
@@ -40,9 +44,9 @@ export default function Disabled() {
 
         <div className="flex space-x-4 mt-4">
           {DisabledOptions.map((option) => (
-            <button
+             <button
               key={option.value}
-              className={`border-4 px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
+              className={` border-4  px-4 py-2 text-lime-200 hover:bg-zinc-800 hover:text-white transition duration-300 ${
                 selectedOption === option.value ? "bg-zinc-800 text-white" : ""
               }`}
               onClick={() => handleButtonClick(option.value)}
@@ -50,6 +54,8 @@ export default function Disabled() {
               {option.label}
             </button>
           ))}
+           
+        
         </div>
       </section>
     </Layout>

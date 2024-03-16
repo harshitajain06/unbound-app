@@ -1,7 +1,15 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+
 
 export default function teacher() {
+
+  const handleGoBack = () => {
+    router.back();
+  };
+  
   return (
     <Layout>
       <Head>
@@ -56,17 +64,18 @@ export default function teacher() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-              * Schools (public and private) < br/>
-              * Colleges and universities < br/>
-             * Coaching centers < br/>
-             * Educational NGOs < br/>
+  * <a href="https://www.naukri.com/teaching-school-jobs" target="_blank" rel="noopener noreferrer">Schools (public and private)</a> <br />
+  * <a href="https://www.naukri.com/teaching-college-jobs" target="_blank" rel="noopener noreferrer">Colleges and universities</a> <br />
+  * <a href="https://www.naukri.com/coaching-center-jobs" target="_blank" rel="noopener noreferrer">Coaching centers</a> <br />
+  * <a href="https://www.naukri.com/educational-ngo-jobs" target="_blank" rel="noopener noreferrer">Educational NGOs</a> <br />
+</p>
 
-                {" "}
-              </p>
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+

@@ -1,7 +1,15 @@
-import Layout, { siteTitle } from "../components/Layout";
 import Head from "next/head";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+
 
 export default function school_bus_driver() {
+
+  const handleGoBack = () => {
+    router.back();
+  };
+  
   return (
     <Layout>
       <Head>
@@ -54,18 +62,17 @@ export default function school_bus_driver() {
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * School transportation services <br />
-                * Educational institutions with in-house transportation <br />
-                * Contracted bus services for schools <br />
-                * Local school districts <br />
-                * Private transportation companies specializing in student transport<br />
-                
-                {" "}
-              </p>
+  * <a href="https://www.naukri.com/school-transportation-jobs" target="_blank" rel="noopener noreferrer">School transportation services</a> <br />
+  * <a href="https://www.naukri.com/school-district-jobs" target="_blank" rel="noopener noreferrer">Local school districts</a> <br />
+  * <a href="https://www.naukri.com/student-transport-jobs" target="_blank" rel="noopener noreferrer">Private transportation companies specializing in student transport</a> <br />
+</p>
+
             </h3>
           </div>
+           
         </div>
       </section>
     </Layout>
   );
 }
+
