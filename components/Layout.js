@@ -1,7 +1,11 @@
 
-import React from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+import Script from 'next/script'
+
 
 const Layout = ({ children }) => {
   return (

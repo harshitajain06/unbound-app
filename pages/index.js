@@ -1,5 +1,9 @@
+import Head from "next/head";
 import Image from "next/image";
-import Layout from "../components/Layout";
+import Layout, { siteTitle } from "../components/Layout";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+import Script from 'next/script'
 
 
 export default function Home() {
@@ -38,58 +42,3 @@ export default function Home() {
     </main>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-      {/* <Image
-        className="absolute -top-20 -right-20"
-        alt="Spiral picture"
-        src="/images/bg-spiral.jpg"
-        width={500}
-        height={500}
-      />
-      <Image
-        className="absolute -bottom-20 -left-20"
-        alt="Cone picture"
-        src="/images/bg-cone.jpg"
-        height={400}
-        width={400}
-      />
-      */}
-    
-
-      
-      // <iframe
-      //     className="w-full h-full aspect-video"
-      //     src="video2.mp4"
-      //   ></iframe>
-      //   <iframe
-      //     className="w-full h-full aspect-video"
-      //     src="video3.mp4"
-      //   ></iframe>
-      //   <iframe
-      //     className="w-full h-full aspect-video"
-      //     src="video4.mp4"
-      //   ></iframe>
-      //   <iframe
-      //     className="w-full h-full aspect-video"
-      //     src="video5.mp4"
-      //   ></iframe>
-        
-      //   <iframe
-      //     className="w-full h-full aspect-video"
-      //     src="video6.mp4"
-      //   ></iframe>
-       
-      //   <iframe
-      //     className="w-full h-full aspect-video"
-      //     src="video7.mp4"
-      //   ></iframe>
