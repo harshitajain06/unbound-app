@@ -4,6 +4,8 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import Script from 'next/script'
+
 
 export default function ProblemSolvingBD() {
   const [textBoxValue, setTextBoxValue] = useState("");
@@ -62,40 +64,4 @@ export default function ProblemSolvingBD() {
       </section>
     </Layout>
   );
-}           Go Back
-          </button>
-      </section>
-    </Layout>
-  );
-}           Go Back
-          </button>
-      </section>
-    </Layout>
-  );
-}           Go Back
-          </button>
-      </section>
-    </Layout>
-  );
-}           Go Back
-          </button>
-      </section>
-    </Layout>
-  );
-}           Go Back
-          </button>
-      </section>
-    </Layout>
-  );
-}           Go Back
-          </button>
-      </section>
-    </Layout>
-  );
-}           Go Back
-          </button>
-      </section>
-    </Layout>
-  );
-}
-// }
+}          

@@ -4,6 +4,8 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import Script from 'next/script'
+
 
 export default function SocialEducationalRoles() {
   const [textBoxValue, setTextBoxValue] = useState("");

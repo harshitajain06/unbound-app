@@ -2,12 +2,13 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import Script from "next/script";
 
 export default function nurse() {
   const handleGoBack = () => {
     router.back();
   };
-return (
+  return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -59,19 +60,52 @@ return (
             <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
               Best Places to Work
               <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-  * <a href="https://www.naukri.com/hospital-clinic-jobs" target="_blank" rel="noopener noreferrer">Hospitals and clinics</a> <br />
-  * <a href="https://www.naukri.com/nursing-home-care-jobs" target="_blank" rel="noopener noreferrer">Nursing homes and care facilities</a> <br />
-  * <a href="https://www.naukri.com/healthcare-institution-jobs" target="_blank" rel="noopener noreferrer">Healthcare institutions</a> <br />
-  * <a href="https://www.naukri.com/rehabilitation-center-jobs" target="_blank" rel="noopener noreferrer">Rehabilitation centers</a> <br />
-  * <a href="https://www.naukri.com/home-healthcare-jobs" target="_blank" rel="noopener noreferrer">Home healthcare services</a> <br />
-</p>
-
+                *{" "}
+                <a
+                  href="https://www.naukri.com/hospital-clinic-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hospitals and clinics
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/nursing-home-care-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Nursing homes and care facilities
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/healthcare-institution-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Healthcare institutions
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/rehabilitation-center-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Rehabilitation centers
+                </a>{" "}
+                <br />*{" "}
+                <a
+                  href="https://www.naukri.com/home-healthcare-jobs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Home healthcare services
+                </a>{" "}
+                <br />
+              </p>
             </h3>
           </div>
-           
         </div>
       </section>
     </Layout>
   );
 }
-
