@@ -1,13 +1,12 @@
-
 import Head from "next/head";
 import Image from "next/image";
-import Layout, { siteTitle } from "../components/Layout";
+import { siteTitle } from "../components/Layout"; // Removed the named import for Layout
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Script from 'next/script'
 
-
-const Layout = ({ children }) => {
+// Renamed Layout component to avoid conflict with named import
+const CustomLayout = ({ children }) => {
   return (
     <div className="flex min-h-screen items-center justify-between p-8 md:p-24 bg-neutral-900 relative">
       {children}
@@ -34,5 +33,4 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
-
+export default CustomLayout; // Changed the export to use the new name

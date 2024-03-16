@@ -4,11 +4,7 @@ import Head from "next/head";
 export default function Aboutpage() {
   return (
     <Layout>
-      <Head>
-        <title>{siteTitle}</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-
-      </Head>
+    
       <section className="py-16">
         <div className="container mx-auto text-center md:w-2/3 lg:w-1/2">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-lime-200">

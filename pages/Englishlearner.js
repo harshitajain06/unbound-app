@@ -14,10 +14,7 @@ export default function english_learner() {
 
   return (
     <Layout className="flex items-center justify-center relative">
-      <Head>
-        <title>{siteTitle}</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-      </Head>
+     
       <section className="py-2">
         <div className="absolute inset-0 ...  top-12 h-16 ... mx-auto text-center ">
           <h1 className="text-4xl md:text-4xl font-bold  text-lime-200">
