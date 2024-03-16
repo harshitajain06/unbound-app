@@ -12,8 +12,7 @@ export default function cashier() {
 return (
     <Layout>
       <Head>
-        <title>{siteTitle}</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+         
         </Head>
       <section className="py-16">
         <div className=" mx-auto text-center md:w-2/3 lg:w-1/2">

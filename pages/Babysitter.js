@@ -2,8 +2,7 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Script from 'next/script'
-
+ 
 
 export default function babysitter() {
   const handleGoBack = () => {
@@ -12,8 +11,7 @@ export default function babysitter() {
 return (
     <Layout>
       <Head>
-        <title>{siteTitle}</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+         
       </Head>
       <section className="py-2">
         <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
