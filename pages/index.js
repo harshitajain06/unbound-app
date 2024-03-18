@@ -11,7 +11,9 @@ export default function Home() {
     <main className="flex min-h-screen items-center justify-center bg-neutral-900 relative">
       {/* Adding the GIF image without transparency */}
       <div className="absolute top-0 left-0 w-full h-full">
-        <Image src="/images/bgpic.gif" 
+
+        <Image src="/images/bgpic2.gif" 
+       
         layout="fill" 
         objectFit="cover" />
       </div>
