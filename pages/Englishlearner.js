@@ -91,7 +91,7 @@ export default function english_learner() {
               </h3>
             </div>
 
-            <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300  ">
+            <div className="border-4 sm:justify centre md:justify centre w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300  ">
               <h3 className="text-l md:text-sm mb-4 text-green-300">
               <a
                   href="https://www.youtube.com/watch?v=axCsKrwav8M"
@@ -104,7 +104,7 @@ export default function english_learner() {
               </h3>
             </div>
 
-            <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
+            <div className="border-4 w-full sm:justify centre md:justify centre max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
               <h3 className="text-l md:text-sm mb-4 text-green-300">
               <a
                   href="https://www.youtube.com/watch?v=Gm9Zhz9x3Kc&list=PLQxsuJ2T7pLMlE50gKnCct1leP4Na2bY8"
