@@ -14,48 +14,55 @@ export default function data_entry_clerk() {
       <title>{siteTitle}</title>
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
-      <section className="py-2">
-        <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
+      <section 
+       style={{
+        position: "fixed",
+        bottom: "49%",
+        right: "27%", // Adjust this value to position the image horizontally
+        transform: "translateY(50%)",
+        transformOrigin: "center",
+      }}
+      >
+        <div className=" text-center ">
           <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200">
             DATA ENTRY CLERK{" "}
           </h1>
-          <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8">
+          <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 ">
             DESCRIPTION
           </h2>
 
-          <div className="text-left">
-            <h3 className="text-4xl md:text-lg font-bold mb-4 text-amber-300 ">
+          <div className="text-left ">
+            <h3 className="text-4xl md:text-xl font-bold mb-4 text-amber-300 ">
               Job Overview
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+              </h3>
+              <p className="text-white mb-8 text-m leading-relaxed  text-balance ...">
                 Data Entry Clerks in India input and manage data into computer
                 systems, ensuring accuracy and efficiency
               </p>
-            </h3>
+           
 
-            <h3 className="text-4xl md:text-lg font-bold mb-4 text-green-300">
+              <h3 className="text-4xl md:text-xl font-bold mb-4 text-green-300 ">
               Basic Salary
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+              </h3>
+              <p className="text-white mb-8 text-m leading-relaxed  text-balance ...">
                 Entry-level Data Entry Clerks earn around INR 10,000 to INR
                 20,000 per month.
               </p>
-            </h3>
+            
 
-            <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-400">
+            <h3 className="text-4xl md:text-xl font-bold mb-4 text-cyan-400 ">
               Time Consumption
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+              </h3>
+              <p className="text-white mb-8 text-m leading-relaxed  text-balance ...">
                 Full-time work, typically 8 hours per day, may involve
                 occasional overtime.
               </p>
-            </h3>
 
-            <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
+            <h3 className="text-4xl md:text-xl font-bold mb-4 text-yellow-100 ">
               Basic Knowledge
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
-                * Typing and keyboarding skills <br />
-                * Attention to detail <br />
-                * Familiarity with data entry software <br />{" "}
-              </p>
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+              </h3>
+            
+              <p className="text-white mb-8 text-m leading-relaxed  text-balance ...">
                 *{" "}
                 <a
                   href="https://www.youtube.com/watch?v=QIlI7YquuRY&pp=ygUnSW1wcm92aW5nIFR5cGluZyBhbmQgS2V5Ym9hcmRpbmcgU2tpbGxz"
@@ -82,11 +89,11 @@ export default function data_entry_clerk() {
                 </a>{" "}
                 <br />
               </p>
-            </h3>
 
-            <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
+            <h3 className="text-4xl md:text-xl font-bold mb-4 text-cyan-200">
               Best Places to Work
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+              </h3>
+              <p className="text-white mb-8 text-m leading-relaxed  text-balance ...">
                 *{" "}
                 <a
                   href="https://www.naukri.com/it-data-entry-jobs"
@@ -127,9 +134,8 @@ export default function data_entry_clerk() {
                 >
                   Government offices and agencies
                 </a>{" "}
-                <br />
-              </p>
-            </h3>
+              <br />
+            </p>
           </div>
         </div>
       </section>

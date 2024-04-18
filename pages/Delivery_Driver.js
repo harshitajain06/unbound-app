@@ -14,8 +14,15 @@ export default function delivery_driver() {
         <title>{siteTitle}</title>
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
-      <section className="py-2">
-        <div className="conta15ner mx-auto text-center md:w-2/3 lg:w-1/2">
+<section 
+       style={{
+        position: "fixed",
+        bottom: "49%",
+        right: "27%", // Adjust this value to position the image horizontally
+        transform: "translateY(50%)",
+        transformOrigin: "center",
+         }}>
+        <div className=" text-center ">
           <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200">
             DELIVERY DRIVER{" "}
           </h1>
@@ -24,34 +31,42 @@ export default function delivery_driver() {
           </h2>
 
           <div className="text-left">
-            <h3 className="text-4xl md:text-lg font-bold mb-4 text-amber-300 ">
+            <h3 className="text-4xl md:text-xl font-bold mb-4 text-amber-300 ">
               Job Overview
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+              </h3>
+
+              <p className="text-white mb-8 text-m leading-relaxed  text-balance ...">
                 Delivery drivers in India transport goods, packages, or food
                 items to designated locations using a vehicle.
               </p>
-            </h3>
 
-            <h3 className="text-4xl md:text-lg font-bold mb-4 text-green-300">
+
+            <h3 className="text-4xl md:text-xl font-bold mb-4 text-green-300 ">
               Basic Salary
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+              </h3>
+
+              <p className="text-white mb-8 text-m leading-relaxed  text-balance ...">
                 Entry-level delivery drivers earn around INR 12,000 to INR
                 20,000 per month, including incentives or bonuses.
               </p>
+
+
+            <h3 className="text-4xl md:text-xl font-bold mb-4 text-cyan-400 ">
+              Time Consumption
             </h3>
 
-            <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-400">
-              Time Consumption
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+              <p className="text-white mb-8 text-m leading-relaxed  text-balance ...">
                 Full-time or part-time positions, with hours varying based on
                 delivery demand, including evenings and weekends.
               </p>
-            </h3>
 
-            <h3 className="text-4xl md:text-lg font-bold mb-4 text-yellow-100	">
+
+            <h3 className="text-4xl md:text-xl font-bold mb-4 text-yellow-100 ">
               Basic Knowledge
+              </h3>
+
              
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+              <p className="text-white mb-8 text-m leading-relaxed  text-balance ...">
                 *{" "}
                 <a
                   href="https://www.youtube.com/watch?v=-tAxc6wkcc8&pp=ygUrTWFzdGVyaW5nIExvY2FsIFJvdXRlcyBhcyBhIERlbGl2ZXJ5IERyaXZlcg%3D%3D"
@@ -78,11 +93,13 @@ export default function delivery_driver() {
                 </a>{" "}
                 <br />
               </p>
+
+
+            <h3 className="text-4xl md:text-xl font-bold mb-4 text-cyan-200">
+              Best Places to Work
             </h3>
 
-            <h3 className="text-4xl md:text-lg font-bold mb-4 text-cyan-200">
-              Best Places to Work
-              <p className="text-white mb-8 text-sm leading-relaxed text-wrap ... text-balance ...">
+              <p className="text-white mb-8 text-m leading-relaxed  text-balance ...">
                 *{" "}
                 <a
                   href="https://www.naukri.com/e-commerce-jobs"
@@ -125,7 +142,7 @@ export default function delivery_driver() {
                 </a>{" "}
                 <br />
               </p>
-            </h3>
+
           </div>
         </div>
       </section>
