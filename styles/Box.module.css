@@ -1,0 +1,21 @@
+/* styles/Box.module.css */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px; /* Set a fixed width for the box */
+    height: 100px; /* Set a fixed height for the box */
+    border: 3px solid #ffff; /* Border color and thickness */
+    border-radius: 40px; /* Border radius for rounded corners */
+    padding: 40px;
+    margin: 20px;
+    /* background-color: #6464d4; */
+    /* (Background color) */
+    color: #d9f699; /* Text color */
+    text-align: center;
+    
+    box-shadow: 0 0 10px rgba(145, 248, 239, 0.7);
+    outline: none; /* Remove default focus outline */
+  }
+  

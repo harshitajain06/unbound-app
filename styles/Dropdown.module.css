@@ -1,0 +1,48 @@
+/* styles/Dropdown.module.css */
+.dropdowncontainer {
+  position: relative;
+}
+  
+  .label {
+    display: block;
+    margin-bottom: 10rem;
+    font-weight: bold;
+  }
+   
+
+
+
+
+  .dropdown {
+    width: 110%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none; /* Remove the default border */
+    border-radius: 1rem;
+    background-color: rgb(17, 16, 16); /* Set the background color to black */
+    color: white; /* Set the text color to white */
+    cursor: pointer;
+  
+    /* Add glowing blue color border */
+    box-shadow: 0 0 10px rgba(145, 248, 239, 0.7);
+    outline: none; /* Remove default focus outline */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will make the container take up the full height of the viewport */
+  }
+  
+  .dropdownButton {
+    /* Add your dropdown button styles here */
+    /* For example: */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  /* Add more styles as needed */
+  
