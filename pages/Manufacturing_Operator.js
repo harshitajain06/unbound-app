@@ -155,3 +155,4 @@ export default function manufacturing_operator() {
     </Layout>
   );
 }
+

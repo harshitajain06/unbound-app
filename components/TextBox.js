@@ -2,8 +2,7 @@
 // import React from "react";
 import React, { useState } from "react";
 
-
-const TextBox = ({type, value, onChange }) => {
+const TextBox = ({ type, value, onChange }) => {
   const [isHovered, setHovered] = useState(false);
   const [isFocused, setFocused] = useState(false);
 
@@ -32,9 +31,11 @@ const TextBox = ({type, value, onChange }) => {
     backgroundColor: '#1c1917', // Replace with your desired neutral 950 color
     outline: 'none',
     transition: 'border-color 0.3s ease', // Smooth transition for border color
-    width: '500px',
-  
+    width: '100%', // Set width to 100% for mobile compatibility
+    maxWidth: '500px', // Limit maximum width for larger screens
+    boxSizing: 'border-box' // Ensure padding and border are included in width calculation
   };
+
   return (
     <input
       type={type}
