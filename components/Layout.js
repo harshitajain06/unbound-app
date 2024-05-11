@@ -13,21 +13,7 @@ const CustomLayout = ({ children }) => {
       {children}
    
 
-{/* <Image
-  className="absolute -top-20 -right-20 w-80 sm:w-96 md:w-500 lg:w-600 xl:w-700"
-  alt="Spiral picture"
-  src="/images/bg-spiral.jpg"
-  width={700} // Default width for the image
-  height={500} // Default height for the image
-/>
 
-<Image
-  className="absolute -bottom-20 -left-20 w-64 sm:w-80 md:w-400 lg:w-500 xl:w-600"
-  alt="Cone picture"
-  src="/images/bg-cone.jpg"
-  width={600} // Default width for the image
-  height={400} // Default height for the image
-/> */}
 
 
       <a href={"/"}>
