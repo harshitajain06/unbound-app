@@ -33,32 +33,24 @@ const LanguageSwitcher = () => {
     return null;
   }
 
-  const switchLanguage = (lang) => () => {
+  const switchLanguage = (lang) => {
     setCookie(null, COOKIE_NAME, "/auto/" + lang);
     window.location.reload();
   };
 
   return (
     <div className="text-center notranslate">
-      {languageConfig.languages.map((ld, i) => (
-        <>
-          {currentLanguage === ld.name ||
-          (currentLanguage === "auto" &&
-            languageConfig.defaultLanguage === ld) ? (
-            <span key={`l_s_${ld}`} className="mx-3 text-orange-300">
-              {ld.title}
-            </span>
-          ) : (
-            <a
-              key={`l_s_${ld}`}
-              onClick={switchLanguage(ld.name)}
-              className="mx-3 text-blue-300 cursor-pointer hover:underline"
-            >
-              {ld.title}
-            </a>
-          )}
-        </>
-      ))}
+      <select
+        value={currentLanguage}
+        onChange={(e) => switchLanguage(e.target.value)}
+        className="px-8 py-2 rounded-md bg-transparent border-2 border-lime-200 focus:ring-2 focus:ring-teal-400"
+      >
+        {languageConfig.languages.map((ld) => (
+          <option key={`lang_${ld.name}`} value={ld.name}>
+            {ld.title}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };
