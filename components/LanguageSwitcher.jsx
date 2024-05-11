@@ -45,7 +45,7 @@ const LanguageSwitcher = () => {
       <select
         value={currentLanguage}
         onChange={(e) => switchLanguage(e.target.value)}
-        className="px-8 py-2 rounded-md bg-transparent border-2 border-lime-200 focus:ring-2 focus:ring-teal-400"
+        className="px-8 py-2 rounded-md bg-black border-2 border-lime-200 focus:ring-2 focus:ring-teal-400"
       >
         {languageConfig.languages.map((ld) => (
           <option key={`lang_${ld.name}`} value={ld.name}>
