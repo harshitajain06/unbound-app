@@ -15,19 +15,20 @@ export default function customer_s_r() {
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section
-        style={{
-          position: "fixed",
-          bottom: "48%",
-          right: "24%", // Adjust this value to position the image horizontally
-          transform: "translateY(50%)",
-          transformOrigin: "center",
+         style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "100vh",
+          padding: "0 20px",
+          boxSizing: "border-box",
         }}
       >
-        <div className=" text-center ">
-          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200">
+        <div className="w-full md:pl-72">
+          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:-mt-32 mt-16">
             CUSTOMER SERVICE REPRESENTATIVE{" "}
           </h1>
-          <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8">
+          <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8 text-center">
             DESCRIPTION
           </h2>
 

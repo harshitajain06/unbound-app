@@ -16,14 +16,16 @@ export default function school_bus_driver() {
       </Head>
 <section 
        style={{
-        position: "fixed",
-        bottom: "49%",
-        right: "27%", // Adjust this value to position the image horizontally
-        transform: "translateY(50%)",
-        transformOrigin: "center",
-         }}>
-        <div className=" text-center ">
-          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200">
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "100vh",
+          padding: "0 20px",
+          boxSizing: "border-box",
+        }}xSizing: "border-box",
+        }}
+        <div className="w-full md:pl-72">
+          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:-mt-32 mt-16">ext-center md:-mt-32 mt-16">
             SCHOOL BUS DRIVER{" "}
           </h1>
           <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8">

@@ -23,8 +23,8 @@ export default function data_entry_clerk() {
         transformOrigin: "center",
       }}
       >
-        <div className=" text-center ">
-          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200">
+        <div className="w-full md:pl-72">
+          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:-mt-32 mt-16">
             DATA ENTRY CLERK{" "}
           </h1>
           <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 ">

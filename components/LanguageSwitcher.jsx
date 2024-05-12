@@ -160,7 +160,7 @@ const LanguageSwitcher = () => {
 
   const switchLanguage = (lang) => {
     setCookie(null, COOKIE_NAME, "/auto/" + lang);
-    window.location.reload();
+    windows.location.reload(true);
   };
 
   return (

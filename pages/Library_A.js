@@ -22,8 +22,8 @@ export default function library_assistant() {
         transform: "translateY(50%)",
         transformOrigin: "center",
          }}>
-        <div className=" text-center ">
-          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200">
+        <div className="w-full md:pl-72">
+          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:-mt-32 mt-16">ext-center md:-mt-32 mt-16">
             LIBRARY ASSISTANTS{" "}
           </h1>
           <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8">

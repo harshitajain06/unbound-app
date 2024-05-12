@@ -23,11 +23,11 @@ export default function community_o_cord() {
           transformOrigin: "center",
         }}
       >
-        <div className=" text-center ">
-          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200">
+        <div className="w-full md:pl-96">
+          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:-mt-4 mt-96">
             COMMUNITY OUTREACH COORDINATOR{" "}
           </h1>
-          <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8">
+          <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8 text-center">
             DESCRIPTION
           </h2>
 
