@@ -176,11 +176,11 @@ const Plumber = () => {
         padding: "0 20px",
         boxSizing: "border-box",
       }}>
-        <div className="w-full  md:pl-60">
-          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:mt-0 mt-14">
+        <div className="w-full md:pl-80">
+        <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:-mt-32 mt-16">
             PLUMBER
           </h1>
-          <h2 className="text-4xl md:text-2xl font-bold text-center text-green-200 mb-8">
+          <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8 text-center">
             DESCRIPTION
           </h2>
 

@@ -22,13 +22,13 @@ export default function school_bus_driver() {
           minHeight: "100vh",
           padding: "0 20px",
           boxSizing: "border-box",
-        }}xSizing: "border-box",
         }}
+        >
         <div className="w-full md:pl-72">
-          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:-mt-32 mt-16">ext-center md:-mt-32 mt-16">
+          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:-mt-32 mt-16">
             SCHOOL BUS DRIVER{" "}
           </h1>
-          <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8">
+          <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8 text-center ">
             DESCRIPTION
           </h2>
 
@@ -52,7 +52,7 @@ export default function school_bus_driver() {
               </p>
 
 
-            <h3 className="text-4xl md:text-l font-bold mb-4  text-cyan-400  ">
+              <h3 className="text-4xl md:text-xl font-bold mb-4 text-cyan-400 ">
               Time Consumption
               </h3>
 

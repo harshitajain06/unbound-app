@@ -177,11 +177,11 @@ export default function SsTech() {
           boxSizing: "border-box",
         }}
       >
-        <div className="w-full md:pl-44">
-          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:mt-0 mt-16">
+     <div className="w-full md:pl-64">
+     <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:-mt-32 mt-16">
             SECURITY SYSTEMS TECHNICIAN
           </h1>
-          <h2 className="text-4xl md:text-2xl font-bold text-green-200 mb-8 text-center">
+          <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8 text-center">
             DESCRIPTION
           </h2>
 

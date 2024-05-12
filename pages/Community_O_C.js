@@ -15,16 +15,17 @@ export default function community_o_cord() {
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section
-        style={{
-          position: "fixed",
-          bottom: "49%",
-          right: "21%", // Adjust this value to position the image horizontally
-          transform: "translateY(50%)",
-          transformOrigin: "center",
+         style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "100vh",
+          padding: "0 20px",
+          boxSizing: "border-box",
         }}
       >
-        <div className="w-full md:pl-96">
-          <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:-mt-4 mt-96">
+     <div className="w-full md:pl-64">
+     <h1 className="text-4xl md:text-4xl font-bold mb-4 text-lime-200 text-center md:-mt-32 mt-16">
             COMMUNITY OUTREACH COORDINATOR{" "}
           </h1>
           <h2 className="text-4xl md:text-2xl font-bold mb-4 text-green-200 mb-8 text-center">
@@ -92,7 +93,7 @@ export default function community_o_cord() {
               <br />{" "}
             </p>
 
-            <h3 className="text-4xl md:text-l font-bold mb-4  text-cyan-200">
+            <h3 className="text-4xl md:text-xl font-bold mb-4 text-cyan-200">
               Best Places to Work
             </h3>
 
