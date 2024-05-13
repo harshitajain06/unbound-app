@@ -13,44 +13,45 @@ export default function english_learner() {
 
   return (
     <Layout className="flex items-center justify-center relative">
-      <section className="py-2">
-        <div className="absolute inset-0 ...  top-12 h-16 ... mx-auto text-center ">
-          <h1 className="text-4xl md:text-4xl font-bold  text-lime-200">
+      <section
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "calc(64vh - 100px)", // Adjusted minHeight
+          padding: "0 64px",
+          boxSizing: "border-box",
+        }}
+      >
+        <div className="text-center md:px-80 ">
+          <h1 className="text-2xl md:text-5xl px-40 font-bold  text-lime-200">
             LEARN ENGLISH!
           </h1>
-          <h2 className="text-4xl md:text-l mb-4 text-green-200 mb-8">
+          <h2 className="text-xl md:text-l mb-4 text-green-200 mb-8">
             PICK YOUR LANGUAGE
           </h2>
 
-          <div
-            style={{
-              position: "fixed",
-              bottom: "49%",
-              right: "20%", // Adjust this value to position the image horizontally
-              transform: "translateY(50%)",
-              transformOrigin: "center",
-            }}
-          >
+          <div>
             {/* Language switchers */}
             <div
-              className="grid grid-cols-2 gap-4 justify-items-center mt-4 px-80 text-l"
+              className="grid grid-cols-2 gap-4 justify-items-center mt-4 text-l"
               style={{ fontFamily: "Times, serif" }}
             >
-              <div className="border-4 w-full max-w-48 ... h-12 ... px-8 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-                <h3 className="md:text-sm  mb-4 text-green-300">
+              <div className="border-4 w-full h-14 px-14 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
+                <h3 className="md:text-xl  mb-4 text-green-300">
                   <a
                     href="https://www.youtube.com/watch?v=xTLK0iHLxFs&list=PLsXdBvuJ5ox7U8HipGaQoS95fFcIhKRRS"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     {" "}
-                    Hindi → English{" "}
+                    Hindi→English{" "}
                   </a>
                 </h3>
               </div>
 
-              <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-                <h3 className="text-l md:text-sm  mb-4 text-green-300">
+              <div className="border-4 w-full h-14  px-14 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
+                <h3 className="md:text-xl  mb-4 text-green-300">
                   <a
                     href="https://www.youtube.com/watch?v=WmRr5x-KV1Y&list=PLnE07AIBtg_KcYOnidGx_SVg-mhvQb7-7"
                     target="_blank"
@@ -62,8 +63,8 @@ export default function english_learner() {
                 </h3>
               </div>
 
-              <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-                <h3 className="text-l md:text-sm mb-4 text-green-300">
+              <div className="border-4 w-full h-14 ... px-14 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
+                <h3 className="md:text-xl  mb-4 text-green-300">
                   <a
                     href="https://www.youtube.com/watch?v=d7QkMiBOZdk&list=PLsRjuO3afXH2oWYCEAXRlQzqtYvcW2rTE"
                     target="_blank"
@@ -75,8 +76,8 @@ export default function english_learner() {
                 </h3>
               </div>
 
-              <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300  ">
-                <h3 className="text-l md:text-sm mb-4 text-green-300">
+              <div className="border-4 w-full h-14 ... px-14 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300  ">
+                <h3 className="md:text-xl  mb-4 text-green-300">
                   <a
                     href="https://www.youtube.com/watch?v=vnk4LYT0xhc&list=PLKEI4M7n-St968Bu4-JTYG4QWdZ0JTjdH"
                     target="_blank"
@@ -88,8 +89,8 @@ export default function english_learner() {
                 </h3>
               </div>
 
-              <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-                <h3 className="text-l md:text-sm mb-4 text-green-300">
+              <div className="border-4 w-full h-14 ... px-14 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
+                <h3 className="md:text-xl  mb-4 text-green-300">
                   <a
                     href="https://www.youtube.com/watch?v=oxjILX9uUS0&list=PL6cUDoseFhVC4xJ_gBvwTLu_lQB8Er1x0"
                     target="_blank"
@@ -101,8 +102,8 @@ export default function english_learner() {
                 </h3>
               </div>
 
-              <div className="border-4 sm:justify centre md:justify centre w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300  ">
-                <h3 className="text-l md:text-sm mb-4 text-green-300">
+              <div className="border-4 w-full h-14 ... px-14 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
+                <h3 className="md:text-xl mb-4 text-green-300">
                   <a
                     href="https://www.youtube.com/watch?v=axCsKrwav8M"
                     target="_blank"
@@ -114,8 +115,8 @@ export default function english_learner() {
                 </h3>
               </div>
 
-              <div className="border-4 w-full sm:justify centre md:justify centre max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-                <h3 className="text-l md:text-sm mb-4 text-green-300">
+              <div className="border-4 w-full h-14 ... px-14 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
+                <h3 className="md:text-xl  mb-4 text-green-300">
                   <a
                     href="https://www.youtube.com/watch?v=Gm9Zhz9x3Kc&list=PLQxsuJ2T7pLMlE50gKnCct1leP4Na2bY8"
                     target="_blank"
@@ -127,8 +128,8 @@ export default function english_learner() {
                 </h3>
               </div>
 
-              <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300  ">
-                <h3 className="text-l md:text-sm mb-4 text-green-300">
+              <div className="border-4 w-full h-14 ... px-14 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
+                <h3 className="md:text-xl  mb-4 text-green-300">
                   <a
                     href="https://www.youtube.com/watch?v=OrjEvwy8VJA"
                     target="_blank"
@@ -140,8 +141,8 @@ export default function english_learner() {
                 </h3>
               </div>
 
-              <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-                <h3 className="text-l md:text-sm mb-4 text-green-300">
+              <div className="border-4 w-full h-14 ... px-14 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
+                <h3 className="md:text-xl  mb-4 text-green-300">
                   <a
                     href="https://www.youtube.com/watch?v=ytzTlZy-1xA&list=PLXYb1GQQ50hpMO4FA4f9XpI_l19Gq5I29"
                     target="_blank"
@@ -153,8 +154,8 @@ export default function english_learner() {
                 </h3>
               </div>
 
-              <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300  ">
-                <h3 className="text-l md:text-sm mb-4 text-green-300">
+              <div className="border-4 w-full h-14 ... px-14 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
+                <h3 className="md:text-xl  mb-4 text-green-300">
                   <a
                     href="https://www.youtube.com/watch?v=yEf-kYA8PRM&list=PLMvw7NZyx2D0fpz2Gg26JZEdIKybNzWye"
                     target="_blank"
@@ -166,8 +167,8 @@ export default function english_learner() {
                 </h3>
               </div>
 
-              <div className="border-4 w-full max-w-48 ... h-12 ... px-4 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
-                <h3 className="text-l md:text-sm mb-4 text-green-300">
+              <div className="border-4 w-full h-14 ... px-14 py-2 text-lime-200 hover:bg-zinc-600 hover:text-white transition duration-300">
+                <h3 className="md:text-xl  mb-4 text-green-300">
                   <a
                     href="https://www.youtube.com/watch?v=yEf-kYA8PRM&list=PLMvw7NZyx2D0fpz2Gg26JZEdIKybNzWye"
                     target="_blank"
