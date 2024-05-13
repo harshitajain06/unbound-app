@@ -63,7 +63,7 @@ export default function LegFunctionality() {
               onClick={() => handleButtonClick(option.value)}
             >
               {option.label}
-            </button>
+            </button> 
           ))}
            
         </div>

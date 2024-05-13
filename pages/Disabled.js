@@ -25,7 +25,7 @@ export default function Disabled() {
   };
 
   const  DisabledOptions = [
-    { label: "hand movements", value: "hand movements" },
+    { label: "Hand Movements", value: "Hand Movements" },
     { label: "Leg Functionality", value: "Leg Functionality" },
     { label: "Blind/Deaf", value: "Blind/Deaf" },
   ];
@@ -36,7 +36,7 @@ export default function Disabled() {
         <title>{siteTitle}</title>
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-lime-200 text-5xl text-center tracking-wide pb-8">
+      <h1 className="text-lime-200 text-5xl text-center tracking-wide pb-8">
           Question 2
         </h1>
 
@@ -44,7 +44,7 @@ export default function Disabled() {
           What mobility challenges do you face?
         </h1>
 
-        <div className="flex space-x-4 mt-4">
+        <div className="grid grid-cols-1 gap-5 mt-5">
           {DisabledOptions.map((option) => (
              <button
               key={option.value}

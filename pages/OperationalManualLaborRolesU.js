@@ -25,7 +25,7 @@ export default function OperationalManualLaborRolesU() {
         <title>{siteTitle}</title>
       </Head>
       <section className="flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-cyan-200 text-4xl ... font-serif ...absolute bottom-0 right-3 w-30 ...">
+        <h1 className="text-white-200 text-4xl ... font-serif ...absolute bottom-0 right-3 w-30 ...">
           RECOMMENDATIONS
         </h1>
         {/* 6 */}
