@@ -57,7 +57,7 @@ const LanguageSwitcher = () => {
             {ld.title}
           </option>
         ))}
-      </select>
+      </select> 
     </div>
   );
 };

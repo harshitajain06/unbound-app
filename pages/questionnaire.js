@@ -84,8 +84,8 @@ export default function Questionnaire() {
 
   return (
     <Layout>
-      <section className="flex flex-col items-center justify-center w-full h-full">
-      <h1 className="text-4xl md:text-5xl font-serif	 w-full max-w-md w-full max-w-md mb-4 text-lime-200 line-clamp-3">
+      <section className="flex flex-col items-center justify-center mt-8 w-full h-full">
+      <h1 className="text-4xl md:text-5xl font-serif w-full max-w-md w-full max-w-md mb-4 text-lime-200 line-clamp-3">
         Identity
       </h1>
       {/* Add some spacing */}

@@ -12,3 +12,4 @@ window.__GOOGLE_TRANSLATION_CONFIG__ = {
   ],
   defaultLanguage: "en",
 };
+ 
