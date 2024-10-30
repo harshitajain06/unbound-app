@@ -11,7 +11,7 @@ export default function Disabled() {
 
   const handleButtonClick = (value) => {
     setSelectedOption(value);
-    if (value === "hand movements") {
+    if (value === "Hand Movements") {
       router.push("/HandMovements");
     } else if (value === "Leg Functionality") {
       router.push("/LegFunctionality");

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import Script from 'next/script'
 
 
-export default function Handmovements() {
+export default function HandMovements() {
   const [selectedOption, setSelectedOption] = useState(""); // State for selected option
   const router = useRouter();
 
@@ -37,7 +37,7 @@ export default function Handmovements() {
   ];
 
   return (
-    <Layout handmovements>
+    <Layout HandMovements>
       <Head>
         <title>{siteTitle}</title>
       </Head>
