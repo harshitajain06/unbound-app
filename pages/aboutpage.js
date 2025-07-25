@@ -15,7 +15,7 @@ export default function Aboutpage() {
             barriers that have hindered countless workers without a bachelor's
             degree from reaching their full potential. We believe in unlocking
             the true passion and potential within every individual, empowering
-            them to pursue any job they desire.
+            them to pursue any job they desire..
             </p>
 
            <p className="text-green-300 mb-8 text-lg leading-relaxed text-wrap ... text-balance ...">
